@@ -1,0 +1,187 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="在日常的博客编写中，我们需要画一些的图形，包括流程图、序列图等。Typora也可以帮助我们编辑这些简易图型，我们可以利用其内置的Mermaid画一些较为简单的图（实际上为HTML代码）。下面将总结这些图像构造及编辑方面的技巧。（注：需勾选扩展语法中的图标选项）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="所见即所得--Typora使用技巧（画图篇）">
+<meta property="og:url" content="https://dyxhhxx.com/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/index.html">
+<meta property="og:site_name" content="小丁小丁是愣头青">
+<meta property="og:description" content="在日常的博客编写中，我们需要画一些的图形，包括流程图、序列图等。Typora也可以帮助我们编辑这些简易图型，我们可以利用其内置的Mermaid画一些较为简单的图（实际上为HTML代码）。下面将总结这些图像构造及编辑方面的技巧。（注：需勾选扩展语法中的图标选项）">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-03-12T13:09:12.000Z">
+<meta property="article:modified_time" content="2021-03-12T14:37:43.324Z">
+<meta property="article:author" content="Ding YeXuan">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Typora">
+<meta property="article:tag" content="Markdown">
+<meta property="article:tag" content="Mermaid">
+<meta name="twitter:card" content="summary"><title>所见即所得--Typora使用技巧（画图篇） | 小丁小丁是愣头青</title><link ref="canonical" href="https://dyxhhxx.com/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">所见即所得--Typora使用技巧（画图篇）</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-12</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">869</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">6分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/" data-flag-title="所见即所得--Typora使用技巧（画图篇）"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><p>在日常的博客编写中，我们需要画一些的图形，包括流程图、序列图等。Typora也可以帮助我们编辑这些简易图型，我们可以利用其内置的<strong>Mermaid</strong>画一些较为简单的图（实际上为<strong>HTML</strong>代码）。下面将总结这些图像构造及编辑方面的技巧。（注：需勾选扩展语法中的图标选项）</p>
+<span id="more"></span>
+
+        <h1 id="流程图">
+          <a href="#流程图" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#流程图"></a> 流程图</h1>
+      
+
+        <h2 id="概述">
+          <a href="#概述" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#概述"></a> 概述</h2>
+      
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">graph 方向描述</span><br><span class="line">  图标中的其他语句...</span><br></pre></td></tr></table></div></figure>
+<p>关键字<strong>graph</strong>表示一个流程图的开始，同时需要指定该图的方向。</p>
+<p>方向描述的方法为：</p>
+<div class="table-container"><table>
+<thead>
+<tr>
+<th style="text-align:center">En</th>
+<th style="text-align:center">Ch</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">TB</td>
+<td style="text-align:center">从上到下</td>
+</tr>
+<tr>
+<td style="text-align:center">BT</td>
+<td style="text-align:center">从下到上</td>
+</tr>
+<tr>
+<td style="text-align:center">RL</td>
+<td style="text-align:center">从右到左</td>
+</tr>
+<tr>
+<td style="text-align:center">LR</td>
+<td style="text-align:center">从左到右</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>T=TOP, B=BOTTOM, L=LEFT, R=RIGHT, D=DOWN</p>
+</blockquote>
+<p>最常用的布局方向是TB、LR。</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">​&#96;&#96;&#96;mermaid</span><br><span class="line">graph TB</span><br><span class="line"> A--&gt;B</span><br><span class="line"> B--&gt;C</span><br><span class="line"> C--&gt;A</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">graph TB;</span><br><span class="line"> A--&gt;B</span><br><span class="line"> B--&gt;C</span><br><span class="line"> C--&gt;A</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line"> A--&gt;B</span><br><span class="line"> B--&gt;C</span><br><span class="line"> C--&gt;A</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">graph LR;</span><br><span class="line"> A--&gt;B</span><br><span class="line"> B--&gt;C</span><br><span class="line"> C--&gt;A</span><br></pre></td></tr></table></div></figure>
+
+        <h2 id="流程图常用符号及含义">
+          <a href="#流程图常用符号及含义" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#流程图常用符号及含义"></a> 流程图常用符号及含义</h2>
+      
+
+        <h3 id="节点形状">
+          <a href="#节点形状" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#节点形状"></a> 节点形状</h3>
+      
+<div class="table-container"><table>
+<thead>
+<tr>
+<th>表述</th>
+<th>说明</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id[文字]</td>
+<td>矩形节点</td>
+<td>表示过程，也就是整个流程中的一个环节</td>
+</tr>
+<tr>
+<td>id(文字)</td>
+<td>圆角矩形节点</td>
+<td>表示开始和结束</td>
+</tr>
+<tr>
+<td>id((文字))</td>
+<td>圆形节点</td>
+<td>表示连接；为避免流程过长或有交叉，可将流程切开；成对</td>
+</tr>
+<tr>
+<td>id{文字}</td>
+<td>菱形节点</td>
+<td>表示判断、决策</td>
+</tr>
+<tr>
+<td>id&gt;文字]</td>
+<td>左向旗帜节点</td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p>单项箭头线端：表示流程进行方向</p>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TB；</span><br><span class="line">A  #默认为矩形节点</span><br><span class="line">B[矩形节点]</span><br><span class="line">C(圆角矩形节点)</span><br><span class="line">D((圆形节点))</span><br><span class="line">E&#123;菱形节点&#125;</span><br><span class="line">F&gt;左向旗帜节点]</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line"> A   </span><br><span class="line"> B[矩形节点]</span><br><span class="line"> C(圆角矩形节点)</span><br><span class="line"> D((圆形节点))</span><br><span class="line"> E&#123;菱形节点&#125;</span><br><span class="line"> F&gt;左向旗帜节点]</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">begin(早上起床)--&gt;think[回想昨晚梦到了什么]</span><br><span class="line">think--&gt;douzi&#123;&quot;有没有梦到豆子?&quot;&#125; #有符号须在两边加&#39;&#39; &#39;&#39;</span><br><span class="line">douzi--&gt;|有|happy[开心]--&gt;sleep-again(再睡一觉)</span><br><span class="line">douzi--没有--&gt;sad[难过]--&gt;sleep-again  </span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">begin(早上起床)--&gt;think[回想昨晚梦到了什么]</span><br><span class="line">think--&gt;douzi&#123;&quot;有没有梦到豆子?&quot;&#125;</span><br><span class="line">douzi--&gt;|有|happy[开心]--&gt;sleep-again(再睡一觉)</span><br><span class="line">douzi--没有--&gt;sad[难过]--&gt;sleep-again</span><br><span class="line"></span><br></pre></td></tr></table></div></figure>
+
+        <h3 id="连线">
+          <a href="#连线" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#连线"></a> 连线</h3>
+      
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line"> A1--&gt;B1</span><br><span class="line"> A2---B2</span><br><span class="line"> A3--TEXT--&gt;B3</span><br><span class="line"> A4--TEXT---B4</span><br><span class="line"> A5-.-&gt;B5</span><br><span class="line"> A6-.-B6</span><br><span class="line"> A7-.TEXT.-&gt;B7</span><br><span class="line"> A8-.TEXT.-B8     #虚线右边不用多加</span><br><span class="line"> A9&#x3D;&#x3D;&gt;B9</span><br><span class="line"> A10&#x3D;&#x3D;&#x3D;B10</span><br><span class="line"> A11&#x3D;&#x3D;TEXT&#x3D;&#x3D;&gt;B11</span><br><span class="line"> A12&#x3D;&#x3D;TEXT&#x3D;&#x3D;&#x3D;B12</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">A1--&gt;B1</span><br><span class="line"> A2---B2</span><br><span class="line"> A3--TEXT--&gt;B3</span><br><span class="line"> A4--TEXT---B4</span><br><span class="line"> A5-.-&gt;B5</span><br><span class="line"> A6-.-B6</span><br><span class="line"> A7-.TEXT.-&gt;B7</span><br><span class="line"> A8-.TEXT.-B8</span><br><span class="line"> A9&#x3D;&#x3D;&gt;B9</span><br><span class="line"> A10&#x3D;&#x3D;&#x3D;B10</span><br><span class="line"> A11&#x3D;&#x3D;TEXT&#x3D;&#x3D;&gt;B11</span><br><span class="line"> A12&#x3D;&#x3D;TEXT&#x3D;&#x3D;&#x3D;B12</span><br></pre></td></tr></table></div></figure>
+
+        <h3 id="子图表">
+          <a href="#子图表" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#子图表"></a> 子图表</h3>
+      
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">subgraph 子图标名称</span><br><span class="line">  子图标描述语句</span><br><span class="line">end</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">subgraph 第一觉 #</span><br><span class="line">begin(早上起床)--&gt;think[回想昨晚梦到了什么]</span><br><span class="line">end #</span><br><span class="line">think--&gt;douzi&#123;&quot;有没有梦到豆子?&quot;&#125;</span><br><span class="line">douzi--&gt;|有|happy[开心]--&gt;sleep-again(再睡一觉)</span><br><span class="line">douzi--没有--&gt;sad[难过]--&gt;sleep-again</span><br></pre></td></tr></table></div></figure>
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">graph TB</span><br><span class="line">subgraph 第一觉</span><br><span class="line">begin(早上起床)--&gt;think[回想昨晚梦到了什么]</span><br><span class="line">end</span><br><span class="line">think--&gt;douzi&#123;&quot;有没有梦到豆子?&quot;&#125;</span><br><span class="line">douzi--&gt;|有|happy[开心]--&gt;sleep-again(再睡一觉)</span><br><span class="line">douzi--没有--&gt;sad[难过]--&gt;sleep-again</span><br></pre></td></tr></table></div></figure>
+<hr>
+<p>未完待续</p>
+<hr>
+<p>以上内容根据B站视频：<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1C7411V7SF?t=127">https://www.bilibili.com/video/BV1C7411V7SF?t=127</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>，</p>
+<p>感谢up主小姐姐👉<strong>救救-99</strong>​ 👈 （<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://space.bilibili.com/32157804?spm_id_from=333.788.b_765f7570696e666f.2">https://space.bilibili.com/32157804?spm_id_from=333.788.b_765f7570696e666f.2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>）,希望大家多去投币支持。</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://dyxhhxx.com">Ding YeXuan</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://dyxhhxx.com/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/">https://dyxhhxx.com/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/Hexo/">Hexo</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/Typora/">Typora</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/Markdown/">Markdown</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/Mermaid/">Mermaid</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/Hexo/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-1/"><span class="paginator-prev__text">所见即所得——Typora使用技巧（基础篇）</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE"><span class="toc-number">1.</span> <span class="toc-text">
+           流程图</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.1.</span> <span class="toc-text">
+           概述</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%81%E7%A8%8B%E5%9B%BE%E5%B8%B8%E7%94%A8%E7%AC%A6%E5%8F%B7%E5%8F%8A%E5%90%AB%E4%B9%89"><span class="toc-number">1.2.</span> <span class="toc-text">
+           流程图常用符号及含义</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%E5%BD%A2%E7%8A%B6"><span class="toc-number">1.2.1.</span> <span class="toc-text">
+           节点形状</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E7%BA%BF"><span class="toc-number">1.2.2.</span> <span class="toc-text">
+           连线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AD%90%E5%9B%BE%E8%A1%A8"><span class="toc-number">1.2.3.</span> <span class="toc-text">
+           子图表</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var guest_info = 'nick,mail,link';
+
+  guest_info = guest_info.split(',').filter(function(item) {
+    return GUEST_INFO.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#valine-container',
+    appId: 'JD82cSEeiaHy0k0RlTAHp9UW-gzGzoHsz',
+    appKey: 'EBGRyenPhIsQ6acEJhQKFhkL',
+    notify: true,
+    verify: true,
+    placeholder: 'Just go go',
+    avatar: 'mp',
+    meta: guest_info,
+    pageSize: '10' || 10,
+    visitor: true,
+    recordIP: false,
+    lang: '' || 'zh-cn',
+    path: window.location.pathname
+  });
+}
+
+if (false) {
+  loadValine();
+} else {
+  window.addEventListener('DOMContentLoaded', loadValine, false);
+}</script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>
