@@ -1,13 +1,15 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="根据书籍《计算机网络-自顶向下方法》，网课根据中科大郑烇老师https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1JV411t7ow?t&#x3D;171&amp;p&#x3D;2 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。  什么是Internet？ 什么是协议？ 网络边缘 接入网、物">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="根据书籍**《计算机网络-自顶向下方法》，网课根据中科大郑烇老师**https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1JV411t7ow?t&#x3D;171&amp;p&#x3D;2 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。  什么是Internet？ 什么是协议？ 网络边缘 接">
 <meta property="og:type" content="article">
 <meta property="og:title" content="计算机网络1--计算机网络和互联网">
 <meta property="og:url" content="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/index.html">
 <meta property="og:site_name" content="小丁小丁是愣头青">
-<meta property="og:description" content="根据书籍《计算机网络-自顶向下方法》，网课根据中科大郑烇老师https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1JV411t7ow?t&#x3D;171&amp;p&#x3D;2 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。  什么是Internet？ 什么是协议？ 网络边缘 接入网、物">
+<meta property="og:description" content="根据书籍**《计算机网络-自顶向下方法》，网课根据中科大郑烇老师**https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1JV411t7ow?t&#x3D;171&amp;p&#x3D;2 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。  什么是Internet？ 什么是协议？ 网络边缘 接">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/1.jpg">
-<meta property="article:published_time" content="2021-03-13T06:58:51.340Z">
-<meta property="article:modified_time" content="2021-03-15T09:48:54.618Z">
+<meta property="og:image" content="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/2.jpg">
+<meta property="og:image" content="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/3.jpg">
+<meta property="article:published_time" content="2021-03-15T09:42:02.211Z">
+<meta property="article:modified_time" content="2021-03-15T15:11:58.464Z">
 <meta property="article:author" content="Ding YeXuan">
 <meta property="article:tag" content="计算机网络">
 <meta property="article:tag" content="自学">
@@ -36,7 +38,7 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">计算机网络1--计算机网络和互联网</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-13</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.5k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">7分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/" data-flag-title="计算机网络1--计算机网络和互联网"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><p>根据书籍<strong>《计算机网络-自顶向下方法》</strong>，网课根据<strong>中科大郑烇老师</strong><span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2">https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。</p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">计算机网络1--计算机网络和互联网</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.8k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">9分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/" data-flag-title="计算机网络1--计算机网络和互联网"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><p>根据书籍**《计算机网络-自顶向下方法》<strong>，网课根据</strong>中科大郑烇老师**<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2">https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。</p>
 <ul>
 <li>什么是Internet？</li>
 <li>什么是协议？</li>
@@ -50,18 +52,25 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 <span id="more"></span>
 
+        <h1 id="计算机网络和互联网">
+          <a href="#计算机网络和互联网" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#计算机网络和互联网"></a> 计算机网络和互联网</h1>
+      
 
-        <h1 id="什么是Internet？">
-          <a href="#什么是Internet？" class="heading-link"><i class="fas fa-link"></i></a><a href="#什么是Internet？" class="headerlink" title="什么是Internet？"></a>什么是Internet？</h1>
-      <ul>
-<li><p>网络</p>
+        <h2 id="什么是internet">
+          <a href="#什么是internet" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#什么是internet"></a> 什么是Internet？</h2>
+      
+<ul>
+<li>
+<p>网络</p>
 <p>由节点和边组成，与形状大小无关的拓扑。（点和线之间关系的图被称为拓扑结构图）</p>
 </li>
-<li><p>计算机网络</p>
+<li>
+<p>计算机网络</p>
 <ul>
-<li>节点<ul>
+<li>节点
+<ul>
 <li>主机节点：数据的<strong>源</strong> <u>方形</u></li>
-<li>数据交换节点：数据的<strong>中转节点</strong>，路由器（网络层）、交换机（链路层）等。 <u>原型</u>            </li>
+<li>数据交换节点：数据的<strong>中转节点</strong>，路由器（网络层）、交换机（链路层）等。 <u>原型</u></li>
 </ul>
 </li>
 </ul>
@@ -70,7 +79,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <li>协议（protocol）：控制发送、接收消息。不同层次有不同协议，每层还有若干种。如：TCP、UDP、IP。</li>
 </ul>
 </li>
-<li><p>互联网网络</p>
+<li>
+<p>互联网网络</p>
 <p>以TCP/IP协议为主的一组网络。从组成结构角度：</p>
 <ul>
 <li>端系统：硬件+操作系统+网络应用进程</li>
@@ -81,89 +91,108 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </li>
 </ul>
 
-        <h1 id="网络边缘">
-          <a href="#网络边缘" class="heading-link"><i class="fas fa-link"></i></a><a href="#网络边缘" class="headerlink" title="网络边缘"></a>网络边缘</h1>
-      <p>互联网按照组成类型分为：网络边缘；网络核心；接入网、物理媒体。</p>
-<img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/1.jpg" alt="1" style="zoom:33%;">
-
+        <h2 id="网络边缘">
+          <a href="#网络边缘" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#网络边缘"></a> 网络边缘</h2>
+      
+<p>互联网按照组成类型分为：网络边缘；网络核心；接入网、物理媒体。</p>
+<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/1.jpg" alt="1"></p>
 <blockquote>
 <p>边缘、接入、核心</p>
 </blockquote>
 <p>网络边缘：主机+应用程序</p>
 <p><strong>两种模式：C(client)/S(server)模式（客户/服务器模式）；peer-peer模式（对等模式）</strong></p>
 
-        <h3 id="客户-服务器模式">
-          <a href="#客户-服务器模式" class="heading-link"><i class="fas fa-link"></i></a><a href="#客户-服务器模式" class="headerlink" title="客户/服务器模式"></a>客户/服务器模式</h3>
-      <p>服务器运转，等待客户端请求资源；客户端发出请求，客户端相应后将结果返回给客户端。所有的资源在服务器，服务器先运行。可扩展性比较差，需要服务器数量、链路数量较大，且服务器载荷过大以至系统崩溃时，所有服务断崖式终止。</p>
+        <h2 id="客户服务器模式">
+          <a href="#客户服务器模式" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#客户服务器模式"></a> 客户/服务器模式</h2>
+      
+<p>服务器运转，等待客户端请求资源；客户端发出请求，客户端相应后将结果返回给客户端。所有的资源在服务器，服务器先运行。可扩展性比较差，需要服务器数量、链路数量较大，且服务器载荷过大以至系统崩溃时，所有服务断崖式终止。</p>
 
-        <h3 id="对等模式">
-          <a href="#对等模式" class="heading-link"><i class="fas fa-link"></i></a><a href="#对等模式" class="headerlink" title="对等模式"></a>对等模式</h3>
-      <p>每个节点既是客户端，又是服务器。分布式通信，可同时向不同的节点服务器请求和发送文件。（典型：迅雷、电驴等）</p>
+        <h2 id="对等模式">
+          <a href="#对等模式" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#对等模式"></a> 对等模式</h2>
+      
+<p>每个节点既是客户端，又是服务器。分布式通信，可同时向不同的节点服务器请求和发送文件。（典型：迅雷、电驴等）</p>
 <p><strong>通信两种方式：面向连接服务，传输控制协议（Transmission Control Protocol，TCP）；无连接服务，用户数据报协议（User Datagram Protocol，UDP）</strong></p>
 
-        <h3 id="TCP">
-          <a href="#TCP" class="heading-link"><i class="fas fa-link"></i></a><a href="#TCP" class="headerlink" title="TCP"></a>TCP</h3>
-      <p>先建立连接，可靠、保序。RDT、流量控制、拥塞控制。应用在：HTTP（Web），FTP（文件传送），Telnet（远程登陆），SMTP（email）</p>
+        <h2 id="tcp">
+          <a href="#tcp" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#tcp"></a> TCP</h2>
+      
+<p>先建立连接，可靠、保序。RDT、流量控制、拥塞控制。应用在：HTTP（Web），FTP（文件传送），Telnet（远程登陆），SMTP（email）</p>
 
-        <h3 id="UDP">
-          <a href="#UDP" class="heading-link"><i class="fas fa-link"></i></a><a href="#UDP" class="headerlink" title="UDP"></a>UDP</h3>
-      <p>无连接，不可靠，没有流量、拥塞控制。无时间代价，适合实时传输、多媒体应用。应用在：流媒体，远程会议，DNS，Internet会议。</p>
+        <h2 id="udp">
+          <a href="#udp" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#udp"></a> UDP</h2>
+      
+<p>无连接，不可靠，没有流量、拥塞控制。无时间代价，适合实时传输、多媒体应用。应用在：流媒体，远程会议，DNS，Internet会议。</p>
 
         <h1 id="网络核心">
-          <a href="#网络核心" class="heading-link"><i class="fas fa-link"></i></a><a href="#网络核心" class="headerlink" title="网络核心"></a>网络核心</h1>
-      <p>路由器的网状网络。</p>
+          <a href="#网络核心" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#网络核心"></a> 网络核心</h1>
+      
+<p>路由器的网状网络。</p>
 <p>电路交换、分组交换</p>
 
         <h2 id="电路交换">
-          <a href="#电路交换" class="heading-link"><i class="fas fa-link"></i></a><a href="#电路交换" class="headerlink" title="电路交换"></a>电路交换</h2>
-      <p>通信前先建立独享线路，有性能保障，但存在资源浪费。通常被传统电话网络采用，但不适合计算机之间的通信（通信时间远小于建立时间；计算机之间的通信具有很强的突发性，保持连接浪费的片较多；可靠性不高）。</p>
+          <a href="#电路交换" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#电路交换"></a> 电路交换</h2>
+      
+<p>通信前先建立独享线路，有性能保障，但存在资源浪费。通常被传统电话网络采用，但不适合计算机之间的通信（通信时间远小于建立时间；计算机之间的通信具有很强的突发性，保持连接浪费的片较多；可靠性不高）。</p>
 <p>节点和节点之间的线路被分为若干的<strong>片</strong>（pieces），分配方式分为：<strong>频分复用</strong>（Frequency-Division Multiplexing, FDM)、<strong>时分复用</strong>(Time-Division Multiplexing, TDM)、波分复用。</p>
 
         <h2 id="分组交换">
-          <a href="#分组交换" class="heading-link"><i class="fas fa-link"></i></a><a href="#分组交换" class="headerlink" title="分组交换"></a>分组交换</h2>
-      <p>以分组为单位存储转发实现交换。不再分片，通信时使用带宽全部；主机之间的通信被分组（packet），在每个节点经过完全的存储后转发（存储的过程中不占用其他线路），最终到达目标主机（一跳一跳）。</p>
+          <a href="#分组交换" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#分组交换"></a> 分组交换</h2>
+      
+<p>以分组为单位存储转发实现交换。不再分片，通信时使用带宽全部；主机之间的通信被分组（packet），在每个节点经过完全的存储后转发（存储的过程中不占用其他线路），最终到达目标主机（一跳一跳）。</p>
 <blockquote>
 <p>计算传输时间时，发送和接收时间是同一个，只计算一次。</p>
 </blockquote>
 <p>时间长，但使网络共享性更强</p>
 
-        <h3 id="排队、延迟和丢包">
-          <a href="#排队、延迟和丢包" class="heading-link"><i class="fas fa-link"></i></a><a href="#排队、延迟和丢包" class="headerlink" title="排队、延迟和丢包"></a>排队、延迟和丢包</h3>
-      <p>如果到达速率大于链路的输出速率：</p>
+        <h3 id="排队-延迟和丢包">
+          <a href="#排队-延迟和丢包" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#排队-延迟和丢包"></a> 排队、延迟和丢包</h3>
+      
+<p>如果到达速率大于链路的输出速率：</p>
 <ul>
 <li>分组将会排队，等待传输</li>
 <li>如果路由器缓存用完，分组将会被抛弃</li>
 </ul>
 
         <h3 id="关键功能">
-          <a href="#关键功能" class="heading-link"><i class="fas fa-link"></i></a><a href="#关键功能" class="headerlink" title="关键功能"></a>关键功能</h3>
+          <a href="#关键功能" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#关键功能"></a> 关键功能</h3>
       
+
         <h4 id="路由">
-          <a href="#路由" class="heading-link"><i class="fas fa-link"></i></a><a href="#路由" class="headerlink" title="路由"></a>路由</h4>
-      <p>决定分组采用的源到目标的路径</p>
+          <a href="#路由" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#路由"></a> 路由</h4>
+      
+<p>决定分组采用的源到目标的路径</p>
 
         <h4 id="转发">
-          <a href="#转发" class="heading-link"><i class="fas fa-link"></i></a><a href="#转发" class="headerlink" title="转发"></a>转发</h4>
-      <p>将分组从路由器的输入链路转移到输出链路。</p>
+          <a href="#转发" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#转发"></a> 转发</h4>
+      
+<p>将分组从路由器的输入链路转移到输出链路。</p>
 
         <h3 id="统计多路复用">
-          <a href="#统计多路复用" class="heading-link"><i class="fas fa-link"></i></a><a href="#统计多路复用" class="headerlink" title="统计多路复用"></a>统计多路复用</h3>
-      <p>一种特殊的时分，没有固定的分组模式。</p>
+          <a href="#统计多路复用" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#统计多路复用"></a> 统计多路复用</h3>
+      
+<p>一种特殊的时分，没有固定的分组模式。</p>
 
         <h2 id="电路交换vs分组交换">
-          <a href="#电路交换vs分组交换" class="heading-link"><i class="fas fa-link"></i></a><a href="#电路交换vs分组交换" class="headerlink" title="电路交换vs分组交换"></a>电路交换vs分组交换</h2>
-      <ul>
-<li><p>分组交换可同时支持更多用户。</p>
-</li>
-<li><p>分组交换是突发数据的胜利者。资源共享，简单不必建立呼叫。</p>
-</li>
-<li><p>过度使用会造成网络拥塞，分组延迟和丢失。对可靠的数据传输需要协议来约束（拥塞控制）。</p>
-</li>
-<li><p>分组交换可提供类似电路交换的服务（保证应用需要的带宽等）</p>
-</li>
-<li><p>分组交换按照网络层是否有连接，分为：</p>
+          <a href="#电路交换vs分组交换" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#电路交换vs分组交换"></a> 电路交换vs分组交换</h2>
+      
 <ul>
-<li><p>数据报网络：</p>
+<li>
+<p>分组交换可同时支持更多用户。</p>
+</li>
+<li>
+<p>分组交换是突发数据的胜利者。资源共享，简单不必建立呼叫。</p>
+</li>
+<li>
+<p>过度使用会造成网络拥塞，分组延迟和丢失。对可靠的数据传输需要协议来约束（拥塞控制）。</p>
+</li>
+<li>
+<p>分组交换可提供类似电路交换的服务（保证应用需要的带宽等）</p>
+</li>
+<li>
+<p>分组交换按照网络层是否有连接，分为：</p>
+<ul>
+<li>
+<p>数据报网络：</p>
 <p>无连接，源主机发向目标主机的每一个分组都携带了目标主机的完整地址。（类似于写信）</p>
 <blockquote>
 <p>数据报（datagram）的工作原理</p>
@@ -174,7 +203,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ol>
 </blockquote>
 </li>
-<li><p>虚电路网络：</p>
+<li>
+<p>虚电路网络：</p>
 <p>先建立其网络层连接，每个交换节点都带有相应的标识。</p>
 <blockquote>
 <p>虚电路（virtual circuit）的工作原理</p>
@@ -186,24 +216,105 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h1 id="接入网和物理媒体">
-          <a href="#接入网和物理媒体" class="heading-link"><i class="fas fa-link"></i></a><a href="#接入网和物理媒体" class="headerlink" title="接入网和物理媒体"></a>接入网和物理媒体</h1>
-      </div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://dyxhhxx.com">Ding YeXuan</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/">https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%87%AA%E5%AD%A6/">自学</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">计算机网络1</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/"><span class="paginator-prev__text">所见即所得--Typora使用技巧（画图篇）</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFInternet%EF%BC%9F"><span class="toc-number">1.</span> <span class="toc-text">
-          什么是Internet？</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98"><span class="toc-number">2.</span> <span class="toc-text">
-          网络边缘</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7-%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.0.1.</span> <span class="toc-text">
-          客户&#x2F;服务器模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%B9%E7%AD%89%E6%A8%A1%E5%BC%8F"><span class="toc-number">2.0.2.</span> <span class="toc-text">
-          对等模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#TCP"><span class="toc-number">2.0.3.</span> <span class="toc-text">
-          TCP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#UDP"><span class="toc-number">2.0.4.</span> <span class="toc-text">
-          UDP</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83"><span class="toc-number">3.</span> <span class="toc-text">
-          网络核心</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2"><span class="toc-number">3.1.</span> <span class="toc-text">
-          电路交换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="toc-number">3.2.</span> <span class="toc-text">
-          分组交换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E9%98%9F%E3%80%81%E5%BB%B6%E8%BF%9F%E5%92%8C%E4%B8%A2%E5%8C%85"><span class="toc-number">3.2.1.</span> <span class="toc-text">
-          排队、延迟和丢包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD"><span class="toc-number">3.2.2.</span> <span class="toc-text">
-          关键功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1"><span class="toc-number">3.2.2.1.</span> <span class="toc-text">
-          路由</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AC%E5%8F%91"><span class="toc-number">3.2.2.2.</span> <span class="toc-text">
-          转发</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8"><span class="toc-number">3.2.3.</span> <span class="toc-text">
-          统计多路复用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2vs%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="toc-number">3.3.</span> <span class="toc-text">
-          电路交换vs分组交换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91%E5%92%8C%E7%89%A9%E7%90%86%E5%AA%92%E4%BD%93"><span class="toc-number">4.</span> <span class="toc-text">
-          接入网和物理媒体</span></a></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
+          <a href="#接入网和物理媒体" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#接入网和物理媒体"></a> 接入网和物理媒体</h1>
+      
+
+        <h2 id="接入网">
+          <a href="#接入网" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#接入网"></a> 接入网</h2>
+      
+<p>接入网是将端系统（end system）连接到边缘路由器（edge system）的网络</p>
+
+        <h3 id="住宅接入-modem">
+          <a href="#住宅接入-modem" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#住宅接入-modem"></a> 住宅接入: modem</h3>
+      
+<p>将上网数据<strong>调制</strong>加载音频信号上。在电话线上传输，在局端将其中的数据<strong>解调</strong>出来。（0-40kHz）</p>
+<p>拨号调制解调器：56Kbps的速率直接接入路由器；不能同时上网和打电话，不能总是在线。</p>
+
+        <h3 id="接入网-digital-subscriber-line-dsl">
+          <a href="#接入网-digital-subscriber-line-dsl" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#接入网-digital-subscriber-line-dsl"></a> 接入网: digital subscriber line, DSL</h3>
+      
+<ul>
+<li>采用现存的到到交换局DSLAM的电话线
+<ul>
+<li>DSL线路上的数据被传到互联网</li>
+<li>DSL线路上的语音被传到电话网</li>
+</ul>
+</li>
+<li>2.5Mbps上行传输速度（typically 1Mbps）</li>
+<li>24Mbps下行传输速率（typically 10Mbps）</li>
+</ul>
+<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/2.jpg" alt="2"></p>
+
+        <h3 id="接入网线缆网络">
+          <a href="#接入网线缆网络" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#接入网线缆网络"></a> 接入网：线缆网络</h3>
+      
+<p>有线电视信号线缆双向改造，各用户共享到线缆头端的接入网络。</p>
+<p><img src="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/3.jpg" alt="3"></p>
+<p>与DSL不同，DSL每个用户一个专用线路到CO（central office）。</p>
+
+        <h3 id="接入网家庭网络">
+          <a href="#接入网家庭网络" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#接入网家庭网络"></a> 接入网：家庭网络</h3>
+      
+<p>设备无线连接到路由器，路由器接到上一级交换机。</p>
+
+        <h3 id="无线接入网络">
+          <a href="#无线接入网络" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#无线接入网络"></a> 无线接入网络</h3>
+      
+<p>各无线端系统共享无线接入网络（端系统到无线路由器）</p>
+<ul>
+<li>
+<p>通过基站（或者叫接入点）</p>
+<p>无线LANs；广域无线接入</p>
+</li>
+</ul>
+
+        <h3 id="企业接入网络">
+          <a href="#企业接入网络" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#企业接入网络"></a> 企业接入网络</h3>
+      
+
+        <h2 id="物理媒体">
+          <a href="#物理媒体" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#物理媒体"></a> 物理媒体</h2>
+      
+
+        <h3 id="导引型媒体">
+          <a href="#导引型媒体" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#导引型媒体"></a> 导引型媒体</h3>
+      
+<p>双绞线、同轴电缆、光纤</p>
+
+        <h3 id="非导引型媒体">
+          <a href="#非导引型媒体" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#非导引型媒体"></a> 非导引型媒体</h3>
+      
+<p>地面微波、LAN、wide-area、卫星</p>
+<hr>
+<p>未完待续…</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://dyxhhxx.com">Ding YeXuan</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/">https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%87%AA%E5%AD%A6/">自学</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/"><span class="paginator-prev__text">所见即所得--Typora使用技巧（画图篇）</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%92%8C%E4%BA%92%E8%81%94%E7%BD%91"><span class="toc-number">1.</span> <span class="toc-text">
+           计算机网络和互联网</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AFinternet"><span class="toc-number">1.1.</span> <span class="toc-text">
+           什么是Internet？</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E8%BE%B9%E7%BC%98"><span class="toc-number">1.2.</span> <span class="toc-text">
+           网络边缘</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%A2%E6%88%B7%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.3.</span> <span class="toc-text">
+           客户&#x2F;服务器模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E7%AD%89%E6%A8%A1%E5%BC%8F"><span class="toc-number">1.4.</span> <span class="toc-text">
+           对等模式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#tcp"><span class="toc-number">1.5.</span> <span class="toc-text">
+           TCP</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#udp"><span class="toc-number">1.6.</span> <span class="toc-text">
+           UDP</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%A0%B8%E5%BF%83"><span class="toc-number">2.</span> <span class="toc-text">
+           网络核心</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2"><span class="toc-number">2.1.</span> <span class="toc-text">
+           电路交换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="toc-number">2.2.</span> <span class="toc-text">
+           分组交换</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%92%E9%98%9F-%E5%BB%B6%E8%BF%9F%E5%92%8C%E4%B8%A2%E5%8C%85"><span class="toc-number">2.2.1.</span> <span class="toc-text">
+           排队、延迟和丢包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%8A%9F%E8%83%BD"><span class="toc-number">2.2.2.</span> <span class="toc-text">
+           关键功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%B7%AF%E7%94%B1"><span class="toc-number">2.2.2.1.</span> <span class="toc-text">
+           路由</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BD%AC%E5%8F%91"><span class="toc-number">2.2.2.2.</span> <span class="toc-text">
+           转发</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%9F%E8%AE%A1%E5%A4%9A%E8%B7%AF%E5%A4%8D%E7%94%A8"><span class="toc-number">2.2.3.</span> <span class="toc-text">
+           统计多路复用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%B5%E8%B7%AF%E4%BA%A4%E6%8D%A2vs%E5%88%86%E7%BB%84%E4%BA%A4%E6%8D%A2"><span class="toc-number">2.3.</span> <span class="toc-text">
+           电路交换vs分组交换</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91%E5%92%8C%E7%89%A9%E7%90%86%E5%AA%92%E4%BD%93"><span class="toc-number">3.</span> <span class="toc-text">
+           接入网和物理媒体</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91"><span class="toc-number">3.1.</span> <span class="toc-text">
+           接入网</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BD%8F%E5%AE%85%E6%8E%A5%E5%85%A5-modem"><span class="toc-number">3.1.1.</span> <span class="toc-text">
+           住宅接入: modem</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91-digital-subscriber-line-dsl"><span class="toc-number">3.1.2.</span> <span class="toc-text">
+           接入网: digital subscriber line, DSL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91%E7%BA%BF%E7%BC%86%E7%BD%91%E7%BB%9C"><span class="toc-number">3.1.3.</span> <span class="toc-text">
+           接入网：线缆网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8E%A5%E5%85%A5%E7%BD%91%E5%AE%B6%E5%BA%AD%E7%BD%91%E7%BB%9C"><span class="toc-number">3.1.4.</span> <span class="toc-text">
+           接入网：家庭网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A0%E7%BA%BF%E6%8E%A5%E5%85%A5%E7%BD%91%E7%BB%9C"><span class="toc-number">3.1.5.</span> <span class="toc-text">
+           无线接入网络</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%81%E4%B8%9A%E6%8E%A5%E5%85%A5%E7%BD%91%E7%BB%9C"><span class="toc-number">3.1.6.</span> <span class="toc-text">
+           企业接入网络</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%A9%E7%90%86%E5%AA%92%E4%BD%93"><span class="toc-number">3.2.</span> <span class="toc-text">
+           物理媒体</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AF%BC%E5%BC%95%E5%9E%8B%E5%AA%92%E4%BD%93"><span class="toc-number">3.2.1.</span> <span class="toc-text">
+           导引型媒体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%9D%9E%E5%AF%BC%E5%BC%95%E5%9E%8B%E5%AA%92%E4%BD%93"><span class="toc-number">3.2.2.</span> <span class="toc-text">
+           非导引型媒体</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">3</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
   var GUEST_INFO = ['nick', 'mail', 'link'];
   var guest_info = 'nick,mail,link';
 
