@@ -28,7 +28,369 @@ var CONFIG = {
   sourcePath: {"js":"js","css":"css","images":"images"},
 };
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/Python/Python-list/">Python学习-列表简介</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-06-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-07-15</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">705</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">5分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/Python/Python-list/" data-flag-title="Python学习-列表简介"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p><strong>列表</strong>由一系列按特定顺序排列的元素构成。下面记录几个列表的常用简单操作。</p>
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content content-home" id="content"><section class="postlist"><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/">操作系统2--进程和线程</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.7k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">8分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/" data-flag-title="操作系统2--进程和线程"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="进程和线程">
+          <a href="#进程和线程" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程和线程"></a> 进程和线程</h1>
+      
+
+        <h2 id="进程的概念和特征">
+          <a href="#进程的概念和特征" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程的概念和特征"></a> 进程的概念和特征</h2>
+      
+
+        <h3 id="进程的概念">
+          <a href="#进程的概念" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程的概念"></a> 进程的概念</h3>
+      
+<p><strong>进程</strong>：</p>
+<ul>
+<li>进程是程序的一次执行过程</li>
+<li>进程是程序及其数据在处理及上顺序执行时所发生的活动（多道程序并发执行而引出）</li>
+<li>进程是具有独立功能的程序在一个数据集合上运行的过程，它是系统进行资源分配和调度的一个独立单位（基本单位）</li>
+</ul>
+<p><strong>进程实体</strong>：PCB（Process Control Block）+程序段+数据段进程是动态的，进程实体是静态的</p>
+<p>PCB是操作系统对进程进行管理所需的数据；程序段和数据段是程序本身运行所需的数据</p>
+<p>PCB两种管理和调度方式：<strong>链接方式</strong>、<strong>索引方式</strong></p>
+<p><mark>进程是动态的，进程实体是静态的</mark></p>
+<p><mark>PCB是进程存在的唯一标识</mark>，创建进程实际上就是创建进程的PCB，撤销进程实际上是撤销进程的PCB</p>
+
+        <h3 id="进程的特征">
+          <a href="#进程的特征" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程的特征"></a> 进程的特征</h3>
+      
+<ul>
+<li>动态性：进程具有生命周期，是动态的产生、变化、消亡的。<mark>动态性是进程最基本的特征。</mark></li>
+<li>并发性：引入进程目的就是让程序能与其他进程的程序并发执行，<strong>以提高资源利用率</strong>。</li>
+<li>独立性：进程实体是能独立<strong>运行</strong>、独立<strong>获得资源</strong>和独立<strong>接受调度</strong>的基本单位。</li>
+<li>异步性</li>
+<li>结构性：PCB+程序段+数据段三部分</li>
+</ul>
+
+        <h2 id="进程的状态和转换">
+          <a href="#进程的状态和转换" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程的状态和转换"></a> 进程的状态和转换</h2>
+      
+<p><strong>进程的5种状态</strong>：</p>
+<ul>
+<li>运行态：处理机一个核最多有一个运行态进程（也可能能有运行态进程，都处于阻塞态）</li>
+<li>就绪态：进程获得了除处理机外的所有资源（只缺少处理机）</li>
+<li>阻塞态：又称等待态，缺少除处理机之外的其他资源（外设、I/O等）</li>
+<li>创建态：申请空白PCB-向PCB中填写信息-系统为进程分配资源-转为就绪态</li>
+<li>结束态：系统将进程置为结束态-资源释放回收</li>
+</ul>
+<p><img src="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/../../../dingyx/Desktop/%25E6%2588%25AA%25E5%25B1%258F2021-11-10%252009.47.47.png" alt="截屏2021-11-10 09.47.47"></p>
+<p><strong>进程的转换</strong>：</p>
+<ul>
+<li><strong>就绪态—运行态</strong>：就绪态进程获得处理机资源</li>
+<li><strong>运行态—就绪态</strong>：运行态进程时间片用完，转为就绪态；或在可剥夺的操作系统中，有优先级更高的进程进入就绪态，操作系统会优        先处理该进程</li>
+<li><strong>运行态—阻塞态</strong>：进程请求某一资源的使用和分配（如外设），或等待某一事件的发生（如I/O操作的完成），进程从运行态转换为阻塞态。<mark>进程以系统调用的形式请求操作系统提供服务。</mark></li>
+<li><strong>阻塞态—就绪态</strong>：进程等待的事件到来后，如I/O操作结束或中断结束时，进程由阻塞态转换为就绪态</li>
+</ul>
+<p><mark>进程从运行态变为阻塞态是主动行为</mark></p>
+<p><mark>进程从阻塞态到就绪态是被动行为</mark></p>
+<p><mark>阻塞态进程无法直接转换为运行态</mark></p>
+
+        <h2 id="进程控制">
+          <a href="#进程控制" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程控制"></a> 进程控制</h2>
+      
+<p>进程控制是主要功能是对系统中的所有进程实施有效的管理。</p>
+<p><strong>由原语实现</strong>：更新PCB信息—将PCB插入合适队列—分配/回收资源（关中断—原语指令—开中断）</p>
+<ul>
+<li>
+<p><strong>进程的创建</strong>:包含终端<strong>用户登录系统</strong>、作业调度、系统提供服务、用户<strong>程序的应用请求</strong>等</p>
+<p>​        系统允许一个进程创建另一个进程（父进程–子进程），<strong>子进程可以继承父进程所拥有的资源</strong>，且会在撤销时将继承的资源归还给父进程。撤销父进程时，必须同时撤销子进程。</p>
+<p>进程创建过程（创建原语）：</p>
+<ul>
+<li>申请空白PCB（PCB是有限的，若PCB申请失败，进程创建失败）</li>
+<li>为进程分配资源（若资源不足，进程不会创建失败，而是进入阻塞队列）</li>
+<li>初始化PCB</li>
+<li>将新进程插入就绪队列</li>
+</ul>
+</li>
+<li>
+<p><strong>进程的终止</strong>：正常结束、异常结束、外界干预（操作员/操作系统干预、父进程请求）</p>
+<p>进程终止过程（撤销原语）：</p>
+<ul>
+<li>检索PCB，读出进程状态</li>
+<li>若进程处于运行态，立刻<strong>终止进程</strong>，并将处理机资源分配给其他进程</li>
+<li>若进程还有子进程，将子进程也终止</li>
+<li>将该进程拥有的全部资源，或还给父进程，或还给操作系统</li>
+<li>将该进程PCB从所在队列删除</li>
+</ul>
+</li>
+<li>
+<p><strong>进程的阻塞</strong>：请求系统资源失败、等待某种操作的完成、新数据尚未达到==（主动行为）==</p>
+<p>阻塞（Block）原语：因为进程的阻塞是一个主动行为，阻塞原语只能自我调用实现</p>
+<ul>
+<li>检索PCB</li>
+<li>若该进程处在运行态，保护其现场，将其状态转换为阻塞态</li>
+<li>将该进程PCB插入响应时间的等待队列，将处理机资源分配给其他进程</li>
+</ul>
+</li>
+<li>
+<p><strong>进程的唤醒</strong>：被阻塞进程等待的事件出现</p>
+<p>唤醒（Wakeup）原语：因为进程的唤醒是一个被动行为，唤醒原语是由其他进程调用</p>
+<ul>
+<li>检索PCB</li>
+<li>将其从等待队列移出，并将其状态转换为就绪态</li>
+<li>将PCB插入就绪队列</li>
+</ul>
+</li>
+<li>
+<p><strong>进程切换</strong>：</p>
+<p>调度和切换区别：调度是指决定将系统资源分配给哪个进程，是一种决策行为；而切换是实际分配资源的行为,是一种执行行为。</p>
+</li>
+</ul>
+
+        <h2 id="进程的通信">
+          <a href="#进程的通信" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#进程的通信"></a> 进程的通信</h2>
+      
+<p>进程通讯是指进程之间的信息交换。各进程拥有的内存地址空间相互独立，一个进程不能直接访问另一个进程的地址空间。</p>
+<p><strong>PV操作</strong>是低级通信操作，高级通信方式有以下三种：</p>
+
+        <h3 id="共享储存">
+          <a href="#共享储存" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#共享储存"></a> 共享储存</h3>
+      
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">进程1--&gt;共享空间</span><br><span class="line">共享空间--&gt;进程1</span><br><span class="line">共享空间--&gt;进程2</span><br><span class="line">进程2--&gt;共享空间</span><br></pre></td></tr></table></div></figure>
+<p>在通信的进程之间存在一块可直接访问的共享空间，通过对这块共享空间进行读写操作实现进程之间的信息交换。在对共享空间进行读写操作时需要使用<mark>同步互斥工具</mark>。</p>
+<p>共享储存又分为两种，低级方式对共享是<strong>基于数据结构的共享</strong>，高级方式是<strong>基于存储区的共享</strong>。</p>
+
+        <h3 id="消息传递">
+          <a href="#消息传递" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#消息传递"></a> 消息传递</h3>
+      
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">进程1--&gt;进程2</span><br><span class="line">进程2--&gt;进程1</span><br></pre></td></tr></table></div></figure>
+
+        <h3 id="管道通信">
+          <a href="#管道通信" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#管道通信"></a> 管道通信</h3>
+      
+<figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph LR</span><br><span class="line">进程1--&gt;缓冲区</span><br><span class="line">缓冲区--&gt;进程2</span><br><span class="line">进程2--&gt;缓冲区</span><br><span class="line">缓冲区--&gt;进程1</span><br></pre></td></tr></table></div></figure>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">操作系统1--操作系统概述</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">2.2k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">11分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" data-flag-title="操作系统1--操作系统概述"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt">
+        <h1 id="操作系统概述">
+          <a href="#操作系统概述" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#操作系统概述"></a> 操作系统概述</h1>
+      
+
+        <h2 id="基本概念">
+          <a href="#基本概念" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#基本概念"></a> 基本概念</h2>
+      
+
+        <h3 id="概念">
+          <a href="#概念" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#概念"></a> 概念</h3>
+      
+<p>计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口）</p>
+<p>四个部分之间关系：操作系统（Operating System，OS）管理各种计算机硬件，为应用程序提供基础，并充当硬件与用户之间的中介</p>
+
+        <h3 id="特征">
+          <a href="#特征" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#特征"></a> 特征</h3>
+      
+<ul>
+<li>
+<p>（进程）并发：两个或多个进程在<strong>同一个时间间隔内同时</strong>运行（并行为<strong>同一时刻同时</strong>运行）</p>
+</li>
+<li>
+<p>（资源）共享：系统中的资源可供内存中的多个并发执行的进程共同使用</p>
+<ul>
+<li>互斥共享方式：一段时间内只允许一个进程访问（<strong>非同时，交替使用</strong>），多数资源都为互斥共享</li>
+<li>同时访问方式：这类资源允许在一段时间内由多个进程同时访问，如扬声器</li>
+</ul>
+<p>​	并发和共享是操作系统的两个最基本特征，<strong>两者互为存在的条件</strong>：1⃣️资源共享是以进程并发为条件的，若系统不允许进程并发，自然不存在资源共享的 问题；2⃣️若系统不能对资源共享实施有效的管理，则必将影响进程并发的执行，甚至根本无法实现进程并发</p>
+</li>
+<li>
+<p>虚拟：虚拟处理器技术是通过多道程序设计技术，采用让多道程序并发执行的方法，来分时使用一个处理器。将一个物理上的处理器，虚拟为多个逻辑上的CPU。包括<strong>时分复用技术</strong>，如处理器的分时共享；<strong>空分复用技术</strong>，如虚拟存储器。</p>
+</li>
+<li>
+<p>异步：多道程序环境中进程的执行并不是一贯到底的，而是走走停停的，是以不可预知的速度向前推进的，这就是进程的异步性。</p>
+</li>
+</ul>
+
+        <h3 id="目标和功能">
+          <a href="#目标和功能" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#目标和功能"></a> 目标和功能</h3>
+      
+<ul>
+<li>操作系统最为计算机系统资源的管理者
+<ul>
+<li>处理机管理（进程管理）：<strong>进程是处理机分配和运行的基本单位</strong>。主要功能包括：进程控制、进程同步、进程通信、死锁处理、处理机调度。</li>
+<li>存储器管理：内存的分配和回收、地址映射、内存保护、内存扩充</li>
+<li>文件管理：操作系统负责文件管理的部分称为文件系统。包括文件储存空间的管理、目录管理、文件读写管理和保护</li>
+<li>设备管理：完成用户的IO请求、缓冲管理、设备分配、设备处理、虚拟设备</li>
+</ul>
+</li>
+<li>操作系统作为用户和计算机硬件系统之间的接口
+<ul>
+<li>命令接口：用户利用这些操作命令来组织和控制作业的执行
+<ul>
+<li>联机命令接口：交互式命令接口，用于分时或实时系统的接口（用户输入一个指令，计算机处理一个指令）</li>
+<li>脱机命令接口：批处理命令接口，适用于批处理系统。（用户输入一堆指令，系统一起处理）</li>
+</ul>
+</li>
+<li>系统调用（程序接口）：也称为广义指令。用户在应用程序中通过系统调用来请求操作系统为其提供服务，如：使用各种外部设备、申请分配和回收内存等</li>
+</ul>
+</li>
+<li>操作系统用作扩充机器</li>
+</ul>
+
+        <h2 id="操作系统发展和分类">
+          <a href="#操作系统发展和分类" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#操作系统发展和分类"></a> 操作系统发展和分类</h2>
+      
+
+        <h3 id="手工操作阶段">
+          <a href="#手工操作阶段" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#手工操作阶段"></a> 手工操作阶段</h3>
+      
+<p>利用纸带机，但所有步骤都要人工干预。</p>
+<p>缺点：</p>
+<ul>
+<li>用户独占全机，不会出现因资源已被其他用户占用而等待的现象，但资源利用率低</li>
+<li>CPU等待手工操作，CPU利用不充分</li>
+</ul>
+
+        <h3 id="单道批处理系统">
+          <a href="#单道批处理系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#单道批处理系统"></a> 单道批处理系统</h3>
+      
+<p>为了解决人机矛盾及CPU和I/O设备之间速度不匹配的矛盾，出现了批处理系统。</p>
+<p>特点：</p>
+<ul>
+<li>自动性：无需人工干预</li>
+<li>顺序性：各道作业的完成顺序与它们进入内存的顺序一致</li>
+<li>单道行：内存中只有一道程序运行</li>
+</ul>
+<p>问题：</p>
+<ul>
+<li>内存中只运行一道程序，在其运行期间发出输入/输出请求后，高速的CPU便处于等待地速的I/O完成状态</li>
+</ul>
+
+        <h3 id="多道批处理系统">
+          <a href="#多道批处理系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#多道批处理系统"></a> 多道批处理系统</h3>
+      
+<p>为了进一步提高资源利用率和系统吞吐量，引入了多道处理技术</p>
+<p>特点：</p>
+<ul>
+<li>多道：内存中同时存放多道相互独立的程序</li>
+<li>宏观上并行</li>
+<li>微观上串行</li>
+</ul>
+<p>技术：</p>
+<ul>
+<li>如何分配处理器</li>
+<li>多道程序的内存分配问题</li>
+<li>I/O设备如何分配</li>
+<li>如何组织和存放大量的程序的数据</li>
+</ul>
+<p>优点：</p>
+<ul>
+<li>资源利用率高</li>
+<li>系统吞吐量大</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>用户响应时间长</li>
+<li>不具备人机交互能力</li>
+</ul>
+
+        <h3 id="分时操作系统">
+          <a href="#分时操作系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#分时操作系统"></a> 分时操作系统</h3>
+      
+<p>分时技术，就是把处理器的运行时间分为很短的时间片，按时间片轮流把处理器分配给各联机作业使用。</p>
+<p>特征：</p>
+<ul>
+<li>同时性：也称多路性</li>
+<li>交互性</li>
+<li>独立性：多个用户可以彼此独立的进行操作，互不干扰</li>
+<li>及时性，用户请求在很短时间内获得响应</li>
+</ul>
+
+        <h3 id="实时操作系统">
+          <a href="#实时操作系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#实时操作系统"></a> 实时操作系统</h3>
+      
+<p>为了能在某个时间限制内完成某些紧急任务，而不需要时间片排队，诞生了实时操作系统</p>
+
+        <h3 id="网络操作系统和分布式计算机系统">
+          <a href="#网络操作系统和分布式计算机系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#网络操作系统和分布式计算机系统"></a> 网络操作系统和分布式计算机系统</h3>
+      
+<p>网络操作系统：将计算机网络中的各台计算机有机的结合起来，使网络中的各种资源共享，各台计算机之间可以进行通信</p>
+<p>分布式计算机系统：系统中若干计算机相互协同完成统一任务</p>
+
+        <h3 id="个人计算机操作系统">
+          <a href="#个人计算机操作系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#个人计算机操作系统"></a> 个人计算机操作系统</h3>
+      
+
+        <h2 id="操作系统的运行环境">
+          <a href="#操作系统的运行环境" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#操作系统的运行环境"></a> 操作系统的运行环境</h2>
+      
+
+        <h3 id="运行机制">
+          <a href="#运行机制" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#运行机制"></a> 运行机制</h3>
+      
+<p><strong>两种指令</strong>：</p>
+<ul>
+<li>特权指令：不允许用户态程序使用</li>
+<li>非特权指令</li>
+</ul>
+<p><strong>两种处理器状态</strong>：</p>
+<ul>
+<li>用户态（目态）</li>
+<li>核心态（管态）</li>
+</ul>
+<p><strong>CPU执行两种不同性质的程序</strong>：</p>
+<ul>
+<li>操作系统内核程序</li>
+<li>用户自编程序（应用程序）</li>
+</ul>
+<p><strong>操作系统内核</strong>：</p>
+<p>微内核：</p>
+<ul>
+<li>时钟管理：1⃣️计时，向用户提供标准的系统时间；2⃣️通过时钟中断的管理，可以实现进程的切换</li>
+<li>中断机制：中断机制中，只有一小部分属于内核，负责保护和恢复中断现场的信息，转移控制权到相关的处理程序。</li>
+<li>原语：原子性</li>
+</ul>
+<p>大内核：</p>
+<p>以上的三种和</p>
+<ul>
+<li>
+<p>系统控制的数据结构和处理：</p>
+<p>如作业控制块、进程控制块（PCB）、设备控制块、各类链表、消息队列、缓冲区、空闲区登记表、内存分配表，为了实现有效的管理，系统需要一些基本操作，常见的三种为：</p>
+<ul>
+<li>进程管理：进程状态管理、进程调度和分派、创建和撤销进程控制块</li>
+<li>存储器管理：存储器空间分配和回收、内存信息保护程序、代码对换程序</li>
+<li>设备管理：缓冲区管理、设备分配和回收</li>
+</ul>
+</li>
+</ul>
+
+        <h3 id="中断和异常">
+          <a href="#中断和异常" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#中断和异常"></a> 中断和异常</h3>
+      
+<p>广义上的中断分为内中断（异常）和外中断（中断），判断依据是信号来源在CPU的内部还是外部</p>
+<p><strong>异常（内中断</strong>）：</p>
+<ul>
+<li>自愿中断-指令中断，trap指令，访管指令</li>
+<li>强迫中断：
+<ul>
+<li>硬件故障</li>
+<li>软件中断</li>
+</ul>
+</li>
+</ul>
+<p><strong>中断（外中断</strong>）：</p>
+<ul>
+<li>外设请求</li>
+<li>人为干预</li>
+</ul>
+<p><strong>中断处理过程</strong>：</p>
+<p>关中断-保存断点（程序计数器PC）-引出中断服务程序-保存现场和屏蔽字-开中断-执行中断服务程序-关中断-恢复现场和屏蔽字-开中断、中断返回</p>
+
+        <h3 id="系统调用">
+          <a href="#系统调用" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#系统调用"></a> 系统调用</h3>
+      
+<p>在用户程序中，凡是与资源有关的操作（如存储分配、I/O传输、管理文件），都必须通过系统调用方式向操作系统提出服务请求，并由操作系统代为完成。这些系统调用功能大致分为以下几类：</p>
+<ul>
+<li>设备管理</li>
+<li>文件管理：读写、删除、创建</li>
+<li>进程控制：进程的创建、撤销、阻塞、唤醒</li>
+<li>进程通信：进程之间的消息传递或信号传递</li>
+<li>内存管理：内存的分配、回收、及获取作业占用内存区大小及始址等功能</li>
+</ul>
+<p>要进行系统调用，需使用特权指令才能完成，及要进入内核态。用户程序通过trap指令，访管指发起系统调用。处理完成后，再返回用户态。</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/">计算机网络-应用层协议原理</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.7k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">9分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/" data-flag-title="计算机网络-应用层协议原理"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p>根据书籍<strong>《计算机网络-自顶向下方法》</strong>，网课根据<strong>中科大郑烇老师</strong><span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2">https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 。下面正式开始计算机网络课程的学习。本篇总结应用层协议原理的知识，包括：</p>
+<ul>
+<li>两种主流体系结构</li>
+<li>进程通信</li>
+<li>Internet传输层提供的服务</li>
+</ul></div><div class="post-readmore"><a class="post-readmore__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/Python/Python-list/">Python学习-列表简介</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-06-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-07-15</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">705</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">5分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/Python/Python-list/" data-flag-title="Python学习-列表简介"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p><strong>列表</strong>由一系列按特定顺序排列的元素构成。下面记录几个列表的常用简单操作。</p>
 
         <h1 id="在列表中修改-添加或删除元素">
           <a href="#在列表中修改-添加或删除元素" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#在列表中修改-添加或删除元素"></a> 在列表中修改、添加或删除元素</h1>
@@ -117,7 +479,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> value <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>,<span class="number">2</span>)   <span class="comment">#range函数左闭右开，左小右大，可指定步长</span></span><br><span class="line">print(value)</span><br><span class="line"></span><br><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></div></figure>
 <p>使用<strong>range函数</strong>和<strong>list函数</strong>创建数字列表</p>
 <figure class="highlight python"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">numbers=<span class="built_in">list</span>(<span class="built_in">range</span>(<span class="number">1</span>,<span class="number">5</span>,<span class="number">2</span>))   <span class="comment">#list函数直接生成列表</span></span><br><span class="line"></span><br><span class="line">[<span class="number">1</span>,<span class="number">3</span>]   </span><br></pre></td></tr></table></div></figure>
-</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/all/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2/">计算机网络2</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-18</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-18</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">0</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">1分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/all/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2/" data-flag-title="计算机网络2"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/">计算机网络1--计算机网络和互联网</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-17</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">2.9k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">15分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/" data-flag-title="计算机网络1--计算机网络和互联网"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p>根据书籍**《计算机网络-自顶向下方法》<strong>，网课根据</strong>中科大郑烇老师**<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2">https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。</p>
+</div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/">计算机网络1--计算机网络和互联网</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-15</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-17</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">2.9k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">15分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/" data-flag-title="计算机网络1--计算机网络和互联网"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p>根据书籍**《计算机网络-自顶向下方法》<strong>，网课根据</strong>中科大郑烇老师**<span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2">https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 。下面正式开始计算机网络课程的学习。本片文章将包括本书第一章“计算机网络和互联网”。学习目标：了解基本的术语和概念；掌握网络的基本原理；为后续章节学习打下基础。</p>
 <ul>
 <li>什么是Internet？</li>
 <li>什么是协议？</li>
@@ -130,7 +492,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <li>历史</li>
 </ul></div><div class="post-readmore"><a class="post-readmore__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C1/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/">所见即所得--Typora使用技巧（画图篇）</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-12</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">869</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">6分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/" data-flag-title="所见即所得--Typora使用技巧（画图篇）"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p>在日常的博客编写中，我们需要画一些的图形，包括流程图、序列图等。Typora也可以帮助我们编辑这些简易图型，我们可以利用其内置的<strong>Mermaid</strong>画一些较为简单的图（实际上为<strong>HTML</strong>代码）。下面将总结这些图像构造及编辑方面的技巧。（注：需勾选扩展语法中的图标选项）</p></div><div class="post-readmore"><a class="post-readmore__link" href="/Hexo/%E6%89%80%E8%A7%81%E5%8D%B3%E6%89%80%E5%BE%97-Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7%EF%BC%88%E7%94%BB%E5%9B%BE%E7%AF%87%EF%BC%89/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><h1 class="post-title"><a class="post-title__link" href="/Hexo/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-1/">所见即所得——Typora使用技巧（基础篇）</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-12</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-17</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">955</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">6分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/Hexo/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-1/" data-flag-title="所见即所得——Typora使用技巧（基础篇）"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p>​        Typora是一款支持<strong>实时预览</strong>的Markdown文本编辑器，支持且仅支持Markdown语法的文本编辑（ a truly minimal markdown editor )。而Markdown是一种用来编写<strong>结构化</strong>文本文档的<strong>纯文本</strong>格式，我们可以在<strong>双手不离开键盘</strong>的情况下，对文本进行一定程度的<strong>格式排版</strong>。当然，为了防止一些程序bug的发生，Typora保留了“<strong>源代码模式</strong>”，可通过快捷键**Ctrl+/**的方式进行查看。我之前都是用Sublime Text编辑md文档，自从开始使用Typora，编辑md文档的速率和舒适度都提高了很多。因此特地在此总结一下Typora编辑的一些逻辑和技巧。</p>
 <p>​       下面正式开始介绍对于Typora以及Markdown的一些基础使用技巧（包括标题、文字、代码、图片、表格等），本文章针对windows系统，mac系统上的操作大致类似。</p></div><div class="post-readmore"><a class="post-readmore__link" href="/Hexo/Typora%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7-1/"><span class="post-readmore__text">阅读全文</span><span class="post-readmore__icon"><i class="fas fa-long-arrow-alt-right"></i></span></a></div></div></article><article class="postlist-item post"><header class="post-header"><div class="sticky-top" data-popover="置顶文章" data-popover-pos="up"><span class="sticky-top__icon"><i class="fas fa-thumbtack"></i></span></div><h1 class="post-title"><a class="post-title__link" href="/%E6%83%B3%E6%B3%95/my-first-post/">My First Post</a></h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-03-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-03-12</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">200</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">1分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E6%83%B3%E6%B3%95/my-first-post/" data-flag-title="My First Post"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><div class="post-excerpt"><p>花了一天时间终于做好了自己的博客网站，也在此写下自己的第一篇文章。对于一个计算机菜鸟来说，前路太过漫长，但我没有时间自怨自艾，只能全力以赴利用好这一年半的时间。庆幸的是，我并不是一个孤独的人，我也有信心做到这一切。接下来时间，我会在争取每天将自己学到的知识在此做一个简单的梳理，以求更好的掌握，除编程语言外，包括数据结构与算法、计算机网络、操作系统、数据库等知识。每学完一个大的知识点，我也会挤时间在此做一个总结。岂能尽如人意，但求无愧我心。</p>
-</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">6</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">11</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
+</div></div></article></section><nav class="paginator"><div class="paginator-inner"><span class="page-number current">1</span></div></nav></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
   var GUEST_INFO = ['nick', 'mail', 'link'];
   var guest_info = 'nick,mail,link';
 
