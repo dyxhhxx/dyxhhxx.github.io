@@ -1,0 +1,218 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="根据书籍《计算机网络-自顶向下方法》，网课根据中科大郑烇老师https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1JV411t7ow?t&#x3D;171&amp;p&#x3D;2 。下面正式开始计算机网络课程的学习。本篇总结HTTP协议的知识。  HTTP协议重点：  报文格式：请求报文、响应报文、请求头各种字段、响应头各种字段 HTTP状态码    Web页：有一些对象组成，这些对象可以是HTML文">
+<meta property="og:type" content="article">
+<meta property="og:title" content="应用层协议-HTTP">
+<meta property="og:url" content="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE-HTTP/index.html">
+<meta property="og:site_name" content="小丁小丁是愣头青">
+<meta property="og:description" content="根据书籍《计算机网络-自顶向下方法》，网课根据中科大郑烇老师https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1JV411t7ow?t&#x3D;171&amp;p&#x3D;2 。下面正式开始计算机网络课程的学习。本篇总结HTTP协议的知识。  HTTP协议重点：  报文格式：请求报文、响应报文、请求头各种字段、响应头各种字段 HTTP状态码    Web页：有一些对象组成，这些对象可以是HTML文">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-01-20T16:25:14.841Z">
+<meta property="article:modified_time" content="2022-01-20T16:26:59.859Z">
+<meta property="article:author" content="Ding YeXuan">
+<meta property="article:tag" content="自学">
+<meta property="article:tag" content="计算机网络">
+<meta name="twitter:card" content="summary"><title>应用层协议-HTTP | 小丁小丁是愣头青</title><link ref="canonical" href="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE-HTTP/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
+var CONFIG = {
+  root: '/',
+  algolia: undefined,
+  assistSearch: undefined,
+  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
+  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
+  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
+  postWidget: {"endText":true},
+  nightMode: {"enable":true},
+  back2top: {"enable":true},
+  codeblock: {"style":"default","highlight":"light","wordWrap":false},
+  reward: false,
+  fancybox: false,
+  zoomImage: {"gapAside":"20px"},
+  galleryWaterfall: undefined,
+  lazyload: false,
+  pjax: undefined,
+  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
+  shortcuts: undefined,
+  prompt: {"copyButton":"复制","copySuccess":"复制成功","copyError":"复制失败"},
+  sourcePath: {"js":"js","css":"css","images":"images"},
+};
+
+window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">应用层协议-HTTP</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2022-01-21</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2022-01-21</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">1.9k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">11分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE-HTTP/" data-flag-title="应用层协议-HTTP"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body"><p>根据书籍<strong>《计算机网络-自顶向下方法》</strong>，网课根据<strong>中科大郑烇老师</strong><span class="exturl"><a class="exturl__link" target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2">https://www.bilibili.com/video/BV1JV411t7ow?t=171&amp;p=2</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span> 。下面正式开始计算机网络课程的学习。本篇总结HTTP协议的知识。</p>
+<hr>
+<p><strong>HTTP协议重点：</strong></p>
+<ul>
+<li><strong>报文格式：请求报文、响应报文、请求头各种字段、响应头各种字段</strong></li>
+<li><strong>HTTP状态码</strong></li>
+</ul>
+<hr>
+<ul>
+<li><p>Web页：有一些对象组成，这些对象可以是HTML文件、JPEG图像、Java小程序、声音剪辑文件</p>
+</li>
+<li><p>Web页含有一个基本的HTML文件，该基本HTML文件又饱含若干个对象的引用</p>
+</li>
+<li><p>通过URL对每个对象进行引用</p>
+<ul>
+<li>访问协议，用户名，口令字，端口等</li>
+</ul>
+</li>
+<li><p>URL格式：</p>
+<p>Port ://user:<span class="exturl"><a class="exturl__link" href="mailto:&#112;&#x73;&#119;&#x40;&#119;&#x77;&#119;&#x2e;&#x73;&#111;&#x6d;&#x65;&#x53;&#x63;&#104;&#x6f;&#111;&#x6c;&#x2e;&#x65;&#100;&#117;">&#112;&#x73;&#119;&#x40;&#119;&#x77;&#119;&#x2e;&#x73;&#111;&#x6d;&#x65;&#x53;&#x63;&#104;&#x6f;&#111;&#x6c;&#x2e;&#x65;&#100;&#117;</a><span class="exturl__icon"><i class="fas fa-external-link-alt"></i></span></span>:port/someDept/pic.gif</p>
+</li>
+</ul>
+
+        <h1 id="HTTP概况">
+          <a href="#HTTP概况" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP概况" class="headerlink" title="HTTP概况"></a>HTTP概况</h1>
+      <p>HTTP：超文本传输协议</p>
+<ul>
+<li>Web的应用层协议</li>
+<li>客户/服务器模式：<ul>
+<li>客户：请求、接收和显示Web对象的浏览器</li>
+<li>服务器：对请求进行响应，发送对象的Web服务器、</li>
+</ul>
+</li>
+<li>使用TCP：<ul>
+<li>客户发起一个与服务器的TCP连接（建立为套接字），端口号为80</li>
+<li>服务器接收客户端的TCP连接</li>
+<li>在浏览器（HTTP客户端）与Web服务器（HTTP服务器server）交换HTTP报文（应用层协议报文）</li>
+<li>TCP连接关闭</li>
+</ul>
+</li>
+<li>HTTP是无状态的<ul>
+<li>服务器并不维护关于客户端的任何信息</li>
+</ul>
+</li>
+</ul>
+
+        <h1 id="HTTP连接">
+          <a href="#HTTP连接" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP连接" class="headerlink" title="HTTP连接"></a>HTTP连接</h1>
+      <ul>
+<li>非持久HTTP<ul>
+<li>最多只有一个对象在TCP连接上发送</li>
+<li>下载多个对象需要对个TCP连接</li>
+<li>HTTP/1.0使用非持久连接</li>
+<li>传输时间n✖️2✖️RTT(Round-Trip Time)</li>
+</ul>
+</li>
+<li>持久HTTP<ul>
+<li>多个对象在一个（在客户端和服务器之间的）TCP连接上传输</li>
+<li>HTTP/1.1默认使用持久连接</li>
+<li>传输时间为（1+n）✖️RTT</li>
+</ul>
+</li>
+</ul>
+
+        <h1 id="HTTP请求和响应报文">
+          <a href="#HTTP请求和响应报文" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP请求和响应报文" class="headerlink" title="HTTP请求和响应报文"></a>HTTP请求和响应报文</h1>
+      <p>两种类型的HTTP报文：<strong>请求、响应</strong></p>
+
+        <h2 id="HTTP请求报文">
+          <a href="#HTTP请求报文" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP请求报文" class="headerlink" title="HTTP请求报文"></a>HTTP请求报文</h2>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">GET &#x2F;somedir&#x2F;page.html HTTP&#x2F;1.1  &#x2F;&#x2F;请求行</span><br><span class="line">Host:www.someschool.edu   &#x2F;&#x2F;首部行  </span><br><span class="line">Connection:close</span><br><span class="line">User-agent:Mozilla&#x2F;5.0</span><br><span class="line">Accept-language:fr</span><br><span class="line">     &#x2F;&#x2F;此处有换行回车符，表示报文结束</span><br><span class="line">&#x2F;&#x2F;实体体（使用GET方法时，实体体为空；使用POST方法时，实体体中包含用户在表单中的输入值）</span><br></pre></td></tr></table></div></figure>
+
+<ul>
+<li><p>请求行：</p>
+<p>请求行有三个字段：方法字段（GET、POST、HEAD(1.0)、PUT、DELETE(1.1)命令）；URL字段；HTTP版本字段</p>
+</li>
+<li><p>首部行：</p>
+<ul>
+<li>Host，指明了对象所在的主机，即使该主机中已经有一条TCP存在，该首部行提供的信息是Web代理高速缓存所要求的</li>
+<li>Connection，close说明服务器不要麻烦的使用持续连接，要求服务器在发送完被请求的对象后就关闭掉这条连接</li>
+<li>User-agent，用来指明用户代理，即向服务器发送请求的浏览器类型</li>
+<li>Accept-language：表明用户想要得到该对象的法语版本（fr）；否则服务器应当发送它的默认版本。（HTTP还支持其他的内容协商首部）</li>
+</ul>
+</li>
+</ul>
+
+        <h2 id="HTTP响应报文">
+          <a href="#HTTP响应报文" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP响应报文" class="headerlink" title="HTTP响应报文"></a>HTTP响应报文</h2>
+      <figure class="highlight plain"><div class="table-container"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">HTTP&#x2F;1.1 200 OK   &#x2F;&#x2F;状态行</span><br><span class="line">Connection:close   &#x2F;&#x2F;首部行</span><br><span class="line">Date:true,18 Aug 2015 15:44:04 GMT</span><br><span class="line">Server:Apache&#x2F;2.2.3 (CentOS)</span><br><span class="line">Last-Modified:True,18 Aug 2015 15:11:03 GMT</span><br><span class="line">Content-Length:6821</span><br><span class="line">Content-Type:text&#x2F;html</span><br><span class="line">   &#x2F;&#x2F;换行回车符</span><br><span class="line">(data data data data data data ...)   &#x2F;&#x2F;实体体</span><br></pre></td></tr></table></div></figure>
+
+<ul>
+<li>状态行：协议版本、状态吗、响应的状态信息</li>
+<li>首部行：<ul>
+<li>Connection：close：发送完报文后关闭该TCP连接</li>
+<li>Date：指示服务器产生并发送该响应报文的日期和时间（该时间不是对象创建或最后修改的时间，而是服务器从它的文件系统检索到该对象，将该对象插入响应报文，并发送该响应报文的时间）</li>
+<li>Server：表示产生该报文的服务器类型（Apache Web服务器）</li>
+<li>Last-Modified：表示对象创建或最后修改的时间</li>
+<li>Content-Length：表示被发送对象中的字节数</li>
+<li>Content-Type：指示了实体体中的对象类型（HTML文本）</li>
+</ul>
+</li>
+</ul>
+
+        <h2 id="HTTP状态码">
+          <a href="#HTTP状态码" class="heading-link"><i class="fas fa-link"></i></a><a href="#HTTP状态码" class="headerlink" title="HTTP状态码"></a>HTTP状态码</h2>
+      <p><strong>200 OK</strong>：请求成功，信息在返回的响应报文中</p>
+<p><strong>301 Moved Permanently</strong>：请求的对象已经被永久转移了，新的URL定义在响应报文的首部行Location：中。客户软件将自动获取新的URL</p>
+<p><strong>400 Bad Request</strong>：一个通用差错代码，指示该请求不被该服务器理解</p>
+<p><strong>404 Not Found</strong>：被请求的文档不在服务器上</p>
+<p><strong>505 HTTP Version Not Supported</strong>：服务器不支持请求报文使用的HTTP协议版本</p>
+
+        <h1 id="用户与服务器的交互：Cookie">
+          <a href="#用户与服务器的交互：Cookie" class="heading-link"><i class="fas fa-link"></i></a><a href="#用户与服务器的交互：Cookie" class="headerlink" title="用户与服务器的交互：Cookie"></a>用户与服务器的交互：Cookie</h1>
+      <p>​        HTTP服务器是无状态的，这简化了服务器的设计，并且允许工程师们去开发可以同时处理数以千计的TCP连接的高性能Web服务器。<strong>但是！</strong>一个Web站点通常希望能够识别用户，为此HTTP使用了cookie。目前大多数主要的门户网站都使用cookie。</p>
+<p><strong>四个组成部分</strong>：</p>
+<ul>
+<li>在HTTP响应报文中有一个cookie的首部行（Set-cookie：用户id）（只有第一次访问服务器会有该首部行）</li>
+<li>在HTTP请求报文有一个cookie的首部行（Cookie：用户id）</li>
+<li>在用户端系统中保留有一个cookie文件，由用户的浏览器管理</li>
+<li>在Web站点有一个后端数据库</li>
+</ul>
+<p>Cookies可以用于用户验证、购物车、推荐、用户状态（Web email）</p>
+<p><strong>如何维持状态</strong>：</p>
+<ul>
+<li>协议端节点：在多个事务上，发送端和接收端维持状态</li>
+<li>cookies：http报文携带状态信息</li>
+</ul>
+
+        <h1 id="Web缓存（代理服务器）">
+          <a href="#Web缓存（代理服务器）" class="heading-link"><i class="fas fa-link"></i></a><a href="#Web缓存（代理服务器）" class="headerlink" title="Web缓存（代理服务器）"></a>Web缓存（代理服务器）</h1>
+      <p>​        Web缓存器（Web cache），也叫代理服务器（proxy server），是能够代表初始Web服务器来满足HTTP请求的网络实体。Web缓存器有自己的磁盘存储空间，并在磁盘存储空间中保存最近请求过的对象的副本。</p>
+<p>​        一旦某浏览器被配置（通过缓存访问Web），每个对某对象的浏览器请求会<strong>首先</strong>被定向到该Web缓存器。对象在缓存中，缓存会直接返回对象（本地访问）；对象不在缓存中，缓存请求原始服务器，然后再将对象返回给客户端（远程访问）。</p>
+<p><strong>目标</strong>：不访问原始服务器，就满足客户的请求</p>
+<p><strong>优点</strong>：</p>
+<ul>
+<li>Web缓存器可以大大减少对客户请求对响应时间</li>
+<li>对服务器而言，Web缓存器可以从整体上减少因特网上的Web流量，从而改善所有应用的性能</li>
+<li>可以减少一个机构的接入链路到因特网的通信量，通信量的减少使该机构不必增加带宽，降低了费用</li>
+</ul>
+
+        <h2 id="条件GET方法">
+          <a href="#条件GET方法" class="heading-link"><i class="fas fa-link"></i></a><a href="#条件GET方法" class="headerlink" title="条件GET方法"></a>条件GET方法</h2>
+      <p>​        <strong>Conditional GET，如果缓存器中的对象副本是最新的，就不要发送对象。</strong></p>
+<p>​        请求报文中会包含一个if-Modified-Since: 的首部行，缓存器会向服务器发送一个条件GET，这个报文告诉服务器，仅当自制定日期之后该对象被修改过，才发送该对象。若该对象没有被修改过，Web服务器仍然后发送一个响应报文，但并没有在该响应报文中包含所请求的对象。而在响应报文的中，状态码会是304 Not Modified，告诉缓存器可以使用缓存的副本。</p>
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://dyxhhxx.com">Ding YeXuan</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE-HTTP/">https://dyxhhxx.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE-HTTP/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%87%AA%E5%AD%A6/">自学</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/">计算机网络</a></span></div><nav class="post-paginator paginator"><div class="paginator-next"><a class="paginator-next__link" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/"><span class="paginator-prev__text">操作系统2--进程和线程</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTP%E6%A6%82%E5%86%B5"><span class="toc-number">1.</span> <span class="toc-text">
+          HTTP概况</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTP%E8%BF%9E%E6%8E%A5"><span class="toc-number">2.</span> <span class="toc-text">
+          HTTP连接</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E5%92%8C%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87"><span class="toc-number">3.</span> <span class="toc-text">
+          HTTP请求和响应报文</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E8%AF%B7%E6%B1%82%E6%8A%A5%E6%96%87"><span class="toc-number">3.1.</span> <span class="toc-text">
+          HTTP请求报文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E5%93%8D%E5%BA%94%E6%8A%A5%E6%96%87"><span class="toc-number">3.2.</span> <span class="toc-text">
+          HTTP响应报文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HTTP%E7%8A%B6%E6%80%81%E7%A0%81"><span class="toc-number">3.3.</span> <span class="toc-text">
+          HTTP状态码</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E4%B8%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E4%BA%A4%E4%BA%92%EF%BC%9ACookie"><span class="toc-number">4.</span> <span class="toc-text">
+          用户与服务器的交互：Cookie</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Web%E7%BC%93%E5%AD%98%EF%BC%88%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89"><span class="toc-number">5.</span> <span class="toc-text">
+          Web缓存（代理服务器）</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9D%A1%E4%BB%B6GET%E6%96%B9%E6%B3%95"><span class="toc-number">5.1.</span> <span class="toc-text">
+          条件GET方法</span></a></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var guest_info = 'nick,mail,link';
+
+  guest_info = guest_info.split(',').filter(function(item) {
+    return GUEST_INFO.indexOf(item) > -1;
+  });
+  new Valine({
+    el: '#valine-container',
+    appId: 'JD82cSEeiaHy0k0RlTAHp9UW-gzGzoHsz',
+    appKey: 'EBGRyenPhIsQ6acEJhQKFhkL',
+    notify: true,
+    verify: true,
+    placeholder: 'Just go go',
+    avatar: 'mp',
+    meta: guest_info,
+    pageSize: '10' || 10,
+    visitor: true,
+    recordIP: false,
+    lang: '' || 'zh-cn',
+    path: window.location.pathname
+  });
+}
+
+if (false) {
+  loadValine();
+} else {
+  window.addEventListener('DOMContentLoaded', loadValine, false);
+}</script><script src="/js/utils.js?v=2.6.2"></script><script src="/js/stun-boot.js?v=2.6.2"></script><script src="/js/scroll.js?v=2.6.2"></script><script src="/js/header.js?v=2.6.2"></script><script src="/js/sidebar.js?v=2.6.2"></script></body></html>

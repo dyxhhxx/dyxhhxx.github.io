@@ -1,15 +1,15 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="操作系统概述                             基本概念                             概念        计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口） 四个部分之间关系：操作系统（Operating Syste">
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.6.2" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.6.2" type="image/png" sizes="32x32"><meta name="description" content="操作系统概述                           基本概念                           概念       计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口） 四个部分之间关系：操作系统（Operating System，OS）管">
 <meta property="og:type" content="article">
 <meta property="og:title" content="操作系统1--操作系统概述">
 <meta property="og:url" content="https://dyxhhxx.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/index.html">
 <meta property="og:site_name" content="小丁小丁是愣头青">
-<meta property="og:description" content="操作系统概述                             基本概念                             概念        计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口） 四个部分之间关系：操作系统（Operating Syste">
+<meta property="og:description" content="操作系统概述                           基本概念                           概念       计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口） 四个部分之间关系：操作系统（Operating System，OS）管">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-11-11T15:29:54.473Z">
 <meta property="article:modified_time" content="2021-11-11T15:32:35.418Z">
 <meta property="article:author" content="Ding YeXuan">
-<meta property="article:tag" content="自学">
 <meta property="article:tag" content="操作系统">
+<meta property="article:tag" content="自学">
 <meta name="twitter:card" content="summary"><title>操作系统1--操作系统概述 | 小丁小丁是愣头青</title><link ref="canonical" href="https://dyxhhxx.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.6.2"><script>var Stun = window.Stun || {};
 var CONFIG = {
   root: '/',
@@ -36,58 +36,46 @@ var CONFIG = {
 
 window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">首页</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">归档</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">分类</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">标签</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">小丁小丁是愣头青</div><div class="header-banner-info__subtitle">自学编程本就逆天而行，※在路上很正常</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><!-- Just used to judge whether it is an article page--><div id="is-post"></div><div class="post"><header class="post-header"><h1 class="post-title">操作系统1--操作系统概述</h1><div class="post-meta"><span class="post-meta-item post-meta-item--createtime"><span class="post-meta-item__icon"><i class="far fa-calendar-plus"></i></span><span class="post-meta-item__info">发表于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--updatetime"><span class="post-meta-item__icon"><i class="far fa-calendar-check"></i></span><span class="post-meta-item__info">更新于</span><span class="post-meta-item__value">2021-11-11</span></span><span class="post-meta-item post-meta-item--wordcount"><span class="post-meta-item__icon"><i class="far fa-file-word"></i></span><span class="post-meta-item__info">字数统计</span><span class="post-meta-item__value">2.2k</span></span><span class="post-meta-item post-meta-item--readtime"><span class="post-meta-item__icon"><i class="far fa-clock"></i></span><span class="post-meta-item__info">阅读时长</span><span class="post-meta-item__value">11分</span></span><span class="post-meta-item post-meta-item--visitors leancloud_visitors" id="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/" data-flag-title="操作系统1--操作系统概述"><span class="post-meta-item__icon"><i class="fas fa-eye"></i></span><span class="post-meta-item__info">阅读次数</span><span class="post-meta-item__value leancloud-visitors-count"></span></span></div></header><div class="post-body">
         <h1 id="操作系统概述">
-          <a href="#操作系统概述" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#操作系统概述"></a> 操作系统概述</h1>
+          <a href="#操作系统概述" class="heading-link"><i class="fas fa-link"></i></a><a href="#操作系统概述" class="headerlink" title="操作系统概述"></a>操作系统概述</h1>
       
-
         <h2 id="基本概念">
-          <a href="#基本概念" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#基本概念"></a> 基本概念</h2>
+          <a href="#基本概念" class="heading-link"><i class="fas fa-link"></i></a><a href="#基本概念" class="headerlink" title="基本概念"></a>基本概念</h2>
       
-
         <h3 id="概念">
-          <a href="#概念" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#概念"></a> 概念</h3>
-      
-<p>计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口）</p>
+          <a href="#概念" class="heading-link"><i class="fas fa-link"></i></a><a href="#概念" class="headerlink" title="概念"></a>概念</h3>
+      <p>计算机系统的四个部分：硬件（中央处理器、内存、输入输出设备）、操作系统（计算机系统中最基础的系统软件）、应用程序（系统调用）、用户（命令接口）</p>
 <p>四个部分之间关系：操作系统（Operating System，OS）管理各种计算机硬件，为应用程序提供基础，并充当硬件与用户之间的中介</p>
 
         <h3 id="特征">
-          <a href="#特征" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#特征"></a> 特征</h3>
-      
-<ul>
-<li>
-<p>（进程）并发：两个或多个进程在<strong>同一个时间间隔内同时</strong>运行（并行为<strong>同一时刻同时</strong>运行）</p>
+          <a href="#特征" class="heading-link"><i class="fas fa-link"></i></a><a href="#特征" class="headerlink" title="特征"></a>特征</h3>
+      <ul>
+<li><p>（进程）并发：两个或多个进程在<strong>同一个时间间隔内同时</strong>运行（并行为<strong>同一时刻同时</strong>运行）</p>
 </li>
-<li>
-<p>（资源）共享：系统中的资源可供内存中的多个并发执行的进程共同使用</p>
+<li><p>（资源）共享：系统中的资源可供内存中的多个并发执行的进程共同使用</p>
 <ul>
 <li>互斥共享方式：一段时间内只允许一个进程访问（<strong>非同时，交替使用</strong>），多数资源都为互斥共享</li>
 <li>同时访问方式：这类资源允许在一段时间内由多个进程同时访问，如扬声器</li>
 </ul>
-<p>​	并发和共享是操作系统的两个最基本特征，<strong>两者互为存在的条件</strong>：1⃣️资源共享是以进程并发为条件的，若系统不允许进程并发，自然不存在资源共享的 问题；2⃣️若系统不能对资源共享实施有效的管理，则必将影响进程并发的执行，甚至根本无法实现进程并发</p>
+<p>​    并发和共享是操作系统的两个最基本特征，<strong>两者互为存在的条件</strong>：1⃣️资源共享是以进程并发为条件的，若系统不允许进程并发，自然不存在资源共享的 问题；2⃣️若系统不能对资源共享实施有效的管理，则必将影响进程并发的执行，甚至根本无法实现进程并发</p>
 </li>
-<li>
-<p>虚拟：虚拟处理器技术是通过多道程序设计技术，采用让多道程序并发执行的方法，来分时使用一个处理器。将一个物理上的处理器，虚拟为多个逻辑上的CPU。包括<strong>时分复用技术</strong>，如处理器的分时共享；<strong>空分复用技术</strong>，如虚拟存储器。</p>
+<li><p>虚拟：虚拟处理器技术是通过多道程序设计技术，采用让多道程序并发执行的方法，来分时使用一个处理器。将一个物理上的处理器，虚拟为多个逻辑上的CPU。包括<strong>时分复用技术</strong>，如处理器的分时共享；<strong>空分复用技术</strong>，如虚拟存储器。</p>
 </li>
-<li>
-<p>异步：多道程序环境中进程的执行并不是一贯到底的，而是走走停停的，是以不可预知的速度向前推进的，这就是进程的异步性。</p>
+<li><p>异步：多道程序环境中进程的执行并不是一贯到底的，而是走走停停的，是以不可预知的速度向前推进的，这就是进程的异步性。</p>
 </li>
 </ul>
 
         <h3 id="目标和功能">
-          <a href="#目标和功能" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#目标和功能"></a> 目标和功能</h3>
-      
-<ul>
-<li>操作系统最为计算机系统资源的管理者
-<ul>
+          <a href="#目标和功能" class="heading-link"><i class="fas fa-link"></i></a><a href="#目标和功能" class="headerlink" title="目标和功能"></a>目标和功能</h3>
+      <ul>
+<li>操作系统最为计算机系统资源的管理者<ul>
 <li>处理机管理（进程管理）：<strong>进程是处理机分配和运行的基本单位</strong>。主要功能包括：进程控制、进程同步、进程通信、死锁处理、处理机调度。</li>
 <li>存储器管理：内存的分配和回收、地址映射、内存保护、内存扩充</li>
 <li>文件管理：操作系统负责文件管理的部分称为文件系统。包括文件储存空间的管理、目录管理、文件读写管理和保护</li>
 <li>设备管理：完成用户的IO请求、缓冲管理、设备分配、设备处理、虚拟设备</li>
 </ul>
 </li>
-<li>操作系统作为用户和计算机硬件系统之间的接口
-<ul>
-<li>命令接口：用户利用这些操作命令来组织和控制作业的执行
-<ul>
+<li>操作系统作为用户和计算机硬件系统之间的接口<ul>
+<li>命令接口：用户利用这些操作命令来组织和控制作业的执行<ul>
 <li>联机命令接口：交互式命令接口，用于分时或实时系统的接口（用户输入一个指令，计算机处理一个指令）</li>
 <li>脱机命令接口：批处理命令接口，适用于批处理系统。（用户输入一堆指令，系统一起处理）</li>
 </ul>
@@ -99,13 +87,11 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h2 id="操作系统发展和分类">
-          <a href="#操作系统发展和分类" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#操作系统发展和分类"></a> 操作系统发展和分类</h2>
+          <a href="#操作系统发展和分类" class="heading-link"><i class="fas fa-link"></i></a><a href="#操作系统发展和分类" class="headerlink" title="操作系统发展和分类"></a>操作系统发展和分类</h2>
       
-
         <h3 id="手工操作阶段">
-          <a href="#手工操作阶段" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#手工操作阶段"></a> 手工操作阶段</h3>
-      
-<p>利用纸带机，但所有步骤都要人工干预。</p>
+          <a href="#手工操作阶段" class="heading-link"><i class="fas fa-link"></i></a><a href="#手工操作阶段" class="headerlink" title="手工操作阶段"></a>手工操作阶段</h3>
+      <p>利用纸带机，但所有步骤都要人工干预。</p>
 <p>缺点：</p>
 <ul>
 <li>用户独占全机，不会出现因资源已被其他用户占用而等待的现象，但资源利用率低</li>
@@ -113,9 +99,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h3 id="单道批处理系统">
-          <a href="#单道批处理系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#单道批处理系统"></a> 单道批处理系统</h3>
-      
-<p>为了解决人机矛盾及CPU和I/O设备之间速度不匹配的矛盾，出现了批处理系统。</p>
+          <a href="#单道批处理系统" class="heading-link"><i class="fas fa-link"></i></a><a href="#单道批处理系统" class="headerlink" title="单道批处理系统"></a>单道批处理系统</h3>
+      <p>为了解决人机矛盾及CPU和I/O设备之间速度不匹配的矛盾，出现了批处理系统。</p>
 <p>特点：</p>
 <ul>
 <li>自动性：无需人工干预</li>
@@ -128,9 +113,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h3 id="多道批处理系统">
-          <a href="#多道批处理系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#多道批处理系统"></a> 多道批处理系统</h3>
-      
-<p>为了进一步提高资源利用率和系统吞吐量，引入了多道处理技术</p>
+          <a href="#多道批处理系统" class="heading-link"><i class="fas fa-link"></i></a><a href="#多道批处理系统" class="headerlink" title="多道批处理系统"></a>多道批处理系统</h3>
+      <p>为了进一步提高资源利用率和系统吞吐量，引入了多道处理技术</p>
 <p>特点：</p>
 <ul>
 <li>多道：内存中同时存放多道相互独立的程序</li>
@@ -156,9 +140,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h3 id="分时操作系统">
-          <a href="#分时操作系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#分时操作系统"></a> 分时操作系统</h3>
-      
-<p>分时技术，就是把处理器的运行时间分为很短的时间片，按时间片轮流把处理器分配给各联机作业使用。</p>
+          <a href="#分时操作系统" class="heading-link"><i class="fas fa-link"></i></a><a href="#分时操作系统" class="headerlink" title="分时操作系统"></a>分时操作系统</h3>
+      <p>分时技术，就是把处理器的运行时间分为很短的时间片，按时间片轮流把处理器分配给各联机作业使用。</p>
 <p>特征：</p>
 <ul>
 <li>同时性：也称多路性</li>
@@ -168,28 +151,23 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h3 id="实时操作系统">
-          <a href="#实时操作系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#实时操作系统"></a> 实时操作系统</h3>
-      
-<p>为了能在某个时间限制内完成某些紧急任务，而不需要时间片排队，诞生了实时操作系统</p>
+          <a href="#实时操作系统" class="heading-link"><i class="fas fa-link"></i></a><a href="#实时操作系统" class="headerlink" title="实时操作系统"></a>实时操作系统</h3>
+      <p>为了能在某个时间限制内完成某些紧急任务，而不需要时间片排队，诞生了实时操作系统</p>
 
         <h3 id="网络操作系统和分布式计算机系统">
-          <a href="#网络操作系统和分布式计算机系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#网络操作系统和分布式计算机系统"></a> 网络操作系统和分布式计算机系统</h3>
-      
-<p>网络操作系统：将计算机网络中的各台计算机有机的结合起来，使网络中的各种资源共享，各台计算机之间可以进行通信</p>
+          <a href="#网络操作系统和分布式计算机系统" class="heading-link"><i class="fas fa-link"></i></a><a href="#网络操作系统和分布式计算机系统" class="headerlink" title="网络操作系统和分布式计算机系统"></a>网络操作系统和分布式计算机系统</h3>
+      <p>网络操作系统：将计算机网络中的各台计算机有机的结合起来，使网络中的各种资源共享，各台计算机之间可以进行通信</p>
 <p>分布式计算机系统：系统中若干计算机相互协同完成统一任务</p>
 
         <h3 id="个人计算机操作系统">
-          <a href="#个人计算机操作系统" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#个人计算机操作系统"></a> 个人计算机操作系统</h3>
+          <a href="#个人计算机操作系统" class="heading-link"><i class="fas fa-link"></i></a><a href="#个人计算机操作系统" class="headerlink" title="个人计算机操作系统"></a>个人计算机操作系统</h3>
       
-
         <h2 id="操作系统的运行环境">
-          <a href="#操作系统的运行环境" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#操作系统的运行环境"></a> 操作系统的运行环境</h2>
+          <a href="#操作系统的运行环境" class="heading-link"><i class="fas fa-link"></i></a><a href="#操作系统的运行环境" class="headerlink" title="操作系统的运行环境"></a>操作系统的运行环境</h2>
       
-
         <h3 id="运行机制">
-          <a href="#运行机制" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#运行机制"></a> 运行机制</h3>
-      
-<p><strong>两种指令</strong>：</p>
+          <a href="#运行机制" class="heading-link"><i class="fas fa-link"></i></a><a href="#运行机制" class="headerlink" title="运行机制"></a>运行机制</h3>
+      <p><strong>两种指令</strong>：</p>
 <ul>
 <li>特权指令：不允许用户态程序使用</li>
 <li>非特权指令</li>
@@ -214,8 +192,7 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <p>大内核：</p>
 <p>以上的三种和</p>
 <ul>
-<li>
-<p>系统控制的数据结构和处理：</p>
+<li><p>系统控制的数据结构和处理：</p>
 <p>如作业控制块、进程控制块（PCB）、设备控制块、各类链表、消息队列、缓冲区、空闲区登记表、内存分配表，为了实现有效的管理，系统需要一些基本操作，常见的三种为：</p>
 <ul>
 <li>进程管理：进程状态管理、进程调度和分派、创建和撤销进程控制块</li>
@@ -226,14 +203,12 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 </ul>
 
         <h3 id="中断和异常">
-          <a href="#中断和异常" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#中断和异常"></a> 中断和异常</h3>
-      
-<p>广义上的中断分为内中断（异常）和外中断（中断），判断依据是信号来源在CPU的内部还是外部</p>
+          <a href="#中断和异常" class="heading-link"><i class="fas fa-link"></i></a><a href="#中断和异常" class="headerlink" title="中断和异常"></a>中断和异常</h3>
+      <p>广义上的中断分为内中断（异常）和外中断（中断），判断依据是信号来源在CPU的内部还是外部</p>
 <p><strong>异常（内中断</strong>）：</p>
 <ul>
 <li>自愿中断-指令中断，trap指令，访管指令</li>
-<li>强迫中断：
-<ul>
+<li>强迫中断：<ul>
 <li>硬件故障</li>
 <li>软件中断</li>
 </ul>
@@ -248,9 +223,8 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <p>关中断-保存断点（程序计数器PC）-引出中断服务程序-保存现场和屏蔽字-开中断-执行中断服务程序-关中断-恢复现场和屏蔽字-开中断、中断返回</p>
 
         <h3 id="系统调用">
-          <a href="#系统调用" class="heading-link"><i class="fas fa-link"></i></a><a class="markdownIt-Anchor" href="#系统调用"></a> 系统调用</h3>
-      
-<p>在用户程序中，凡是与资源有关的操作（如存储分配、I/O传输、管理文件），都必须通过系统调用方式向操作系统提出服务请求，并由操作系统代为完成。这些系统调用功能大致分为以下几类：</p>
+          <a href="#系统调用" class="heading-link"><i class="fas fa-link"></i></a><a href="#系统调用" class="headerlink" title="系统调用"></a>系统调用</h3>
+      <p>在用户程序中，凡是与资源有关的操作（如存储分配、I/O传输、管理文件），都必须通过系统调用方式向操作系统提出服务请求，并由操作系统代为完成。这些系统调用功能大致分为以下几类：</p>
 <ul>
 <li>设备管理</li>
 <li>文件管理：读写、删除、创建</li>
@@ -259,24 +233,24 @@ window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 5.4.0"></he
 <li>内存管理：内存的分配、回收、及获取作业占用内存区大小及始址等功能</li>
 </ul>
 <p>要进行系统调用，需使用特权指令才能完成，及要进入内核态。用户程序通过trap指令，访管指发起系统调用。处理完成后，再返回用户态。</p>
-</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://dyxhhxx.com">Ding YeXuan</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://dyxhhxx.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">https://dyxhhxx.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%87%AA%E5%AD%A6/">自学</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">操作系统2--进程和线程</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/"><span class="paginator-prev__text">计算机网络-应用层协议原理</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">
-           操作系统概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">
-           基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.</span> <span class="toc-text">
-           概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E5%BE%81"><span class="toc-number">1.1.2.</span> <span class="toc-text">
-           特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%E5%92%8C%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.3.</span> <span class="toc-text">
-           目标和功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%92%8C%E5%88%86%E7%B1%BB"><span class="toc-number">1.2.</span> <span class="toc-text">
-           操作系统发展和分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E6%93%8D%E4%BD%9C%E9%98%B6%E6%AE%B5"><span class="toc-number">1.2.1.</span> <span class="toc-text">
-           手工操作阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E9%81%93%E6%89%B9%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">
-           单道批处理系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E9%81%93%E6%89%B9%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text">
-           多道批处理系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.4.</span> <span class="toc-text">
-           分时操作系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.5.</span> <span class="toc-text">
-           实时操作系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.6.</span> <span class="toc-text">
-           网络操作系统和分布式计算机系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.7.</span> <span class="toc-text">
-           个人计算机操作系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">1.3.</span> <span class="toc-text">
-           操作系统的运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">
-           运行机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8"><span class="toc-number">1.3.2.</span> <span class="toc-text">
-           中断和异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text">
-           系统调用</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">8</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2021</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
+</div><footer class="post-footer"><div class="post-ending ending"><div class="ending__text">------ 本文结束，感谢您的阅读 ------</div></div><div class="post-copyright copyright"><div class="copyright-author"><span class="copyright-author__name">本文作者: </span><span class="copyright-author__value"><a href="https://dyxhhxx.com">Ding YeXuan</a></span></div><div class="copyright-link"><span class="copyright-link__name">本文链接: </span><span class="copyright-link__value"><a href="https://dyxhhxx.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/">https://dyxhhxx.com/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F1-%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0/</a></span></div><div class="copyright-notice"><span class="copyright-notice__name">版权声明: </span><span class="copyright-notice__value">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" rel="external nofollow" target="_blank">BY-NC-SA</a> 许可协议。转载请注明出处！</span></div></div><div class="post-tags"><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span><span class="post-tags-item"><span class="post-tags-item__icon"><i class="fas fa-tag"></i></span><a class="post-tags-item__link" href="https://dyxhhxx.com/tags/%E8%87%AA%E5%AD%A6/">自学</a></span></div><nav class="post-paginator paginator"><div class="paginator-prev"><a class="paginator-prev__link" href="/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F2-%E8%BF%9B%E7%A8%8B%E5%92%8C%E7%BA%BF%E7%A8%8B/"><span class="paginator-prev__icon"><i class="fas fa-angle-left"></i></span><span class="paginator-prev__text">操作系统2--进程和线程</span></a></div><div class="paginator-next"><a class="paginator-next__link" href="/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C2-%E5%BA%94%E7%94%A8%E5%B1%82%E5%8D%8F%E8%AE%AE%E5%8E%9F%E7%90%86/"><span class="paginator-prev__text">计算机网络-应用层协议原理</span><span class="paginator-next__icon"><i class="fas fa-angle-right"></i></span></a></div></nav></footer></div></div><div class="comments" id="comments"><div id="valine-container"></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><div class="sidebar-nav"><span class="sidebar-nav-toc current">文章目录</span><span class="sidebar-nav-ov">站点概览</span></div><section class="sidebar-toc"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text">
+          操作系统概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.</span> <span class="toc-text">
+          基本概念</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A6%82%E5%BF%B5"><span class="toc-number">1.1.1.</span> <span class="toc-text">
+          概念</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%89%B9%E5%BE%81"><span class="toc-number">1.1.2.</span> <span class="toc-text">
+          特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E6%A0%87%E5%92%8C%E5%8A%9F%E8%83%BD"><span class="toc-number">1.1.3.</span> <span class="toc-text">
+          目标和功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%91%E5%B1%95%E5%92%8C%E5%88%86%E7%B1%BB"><span class="toc-number">1.2.</span> <span class="toc-text">
+          操作系统发展和分类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%8B%E5%B7%A5%E6%93%8D%E4%BD%9C%E9%98%B6%E6%AE%B5"><span class="toc-number">1.2.1.</span> <span class="toc-text">
+          手工操作阶段</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%95%E9%81%93%E6%89%B9%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.2.</span> <span class="toc-text">
+          单道批处理系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E9%81%93%E6%89%B9%E5%A4%84%E7%90%86%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.3.</span> <span class="toc-text">
+          多道批处理系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%86%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.4.</span> <span class="toc-text">
+          分时操作系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%9E%E6%97%B6%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.5.</span> <span class="toc-text">
+          实时操作系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BD%91%E7%BB%9C%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%92%8C%E5%88%86%E5%B8%83%E5%BC%8F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.6.</span> <span class="toc-text">
+          网络操作系统和分布式计算机系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F"><span class="toc-number">1.2.7.</span> <span class="toc-text">
+          个人计算机操作系统</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E7%9A%84%E8%BF%90%E8%A1%8C%E7%8E%AF%E5%A2%83"><span class="toc-number">1.3.</span> <span class="toc-text">
+          操作系统的运行环境</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%90%E8%A1%8C%E6%9C%BA%E5%88%B6"><span class="toc-number">1.3.1.</span> <span class="toc-text">
+          运行机制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%AD%E6%96%AD%E5%92%8C%E5%BC%82%E5%B8%B8"><span class="toc-number">1.3.2.</span> <span class="toc-text">
+          中断和异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%B3%BB%E7%BB%9F%E8%B0%83%E7%94%A8"><span class="toc-number">1.3.3.</span> <span class="toc-text">
+          系统调用</span></a></li></ol></li></ol></li></ol></section><!-- ov = overview--><section class="sidebar-ov hide"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="https://pic2.zhimg.com/v2-d46abf99ff7e38e8518d3b79a9fd9329_b.jpg" alt="avatar"></div><p class="sidebar-ov-author__text">Everybody Knows That</p></div><div class="sidebar-ov-social"><a class="sidebar-ov-social-item" href="https://github.com/dyxhhxx" target="_blank" rel="noopener" data-popover="Github" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-github"></i></span></a><a class="sidebar-ov-social-item" href="https://www.weibo.com/u/1955263110/home?wvr=5" target="_blank" rel="noopener" data-popover="微博" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weibo"></i></span></a><a class="sidebar-ov-social-item" href="https://www.zhihu.com/people/ji-ya-e-gou-mao-66" target="_blank" rel="noopener" data-popover="知乎" data-popover-pos="up"><span class="sidebar-ov-social-item__icon">知</span></a><a class="sidebar-ov-social-item" href="dyx937461343" target="_blank" rel="noopener" data-popover="微信" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-weixin"></i></span></a><a class="sidebar-ov-social-item" href="937461343" target="_blank" rel="noopener" data-popover="QQ" data-popover-pos="up"><span class="sidebar-ov-social-item__icon"><i class="fab fa-qq"></i></span></a></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">9</div><div class="sidebar-ov-state-item__name">归档</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">5</div><div class="sidebar-ov-state-item__name">分类</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">12</div><div class="sidebar-ov-state-item__name">标签</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="知识共享许可协议" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section><div class="sidebar-reading"><div class="sidebar-reading-info"><span class="sidebar-reading-info__text">你已阅读了 </span><span class="sidebar-reading-info__num">0</span><span class="sidebar-reading-info__perc">%</span></div><div class="sidebar-reading-line"></div></div></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2022</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Ding YeXuan</span></div><div><span>由 <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> 强力驱动</span><span> v5.4.0</span><span class="footer__devider">|</span><span>主题 - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.6.2</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="https://cdn.jsdelivr.net/npm/leancloud-storage@latest/dist/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script><script>function loadValine () {
   var GUEST_INFO = ['nick', 'mail', 'link'];
   var guest_info = 'nick,mail,link';
 
